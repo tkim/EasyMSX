@@ -23,7 +23,7 @@ The github link to the `EMSX API Code Sample`_.
 
 
 
-.. _python: https://github.com/tkim/emsx_api_repository/blob/master/EasyMSXRepository/EasyMSXPython/EasyMSXSample.py
+.. _python: https://github.com/tkim/EasyMSXRepository.git
 
 .. _EMSX API Documentation: http://emsx-api-doc.readthedocs.io/en/latest/
 
