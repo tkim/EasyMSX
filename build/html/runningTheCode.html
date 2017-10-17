@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Running the Code &mdash; EasyMSXDoc 0.1.1 documentation</title>
+  <title>Running the Code &mdash; EasyMSXDoc 0.2.1 documentation</title>
   
 
   
@@ -33,8 +33,8 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="EasyMSXDoc 0.1.1 documentation" href="index.html"/>
-        <link rel="prev" title="Introduction" href="introduction.html"/> 
+    <link rel="top" title="EasyMSXDoc 0.2.1 documentation" href="index.html"/>
+        <link rel="prev" title="EasyMSX Documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                0.1
+                0.2
               </div>
             
           
@@ -85,8 +85,12 @@
             
                 <p class="caption"><span class="caption-text">Table of Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Running the Code</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#easymsx-python">EasyMSX Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#easymsx-csharp">EasyMSX CSharp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#easymkt">EasyMKT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rulemsx">RuleMSX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#full-easymsx-code-samples">Full EasyMSX Code Samples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#full-emsx-api-documentation">Full EMSX API Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#full-emsx-api-code-samples">Full EMSX API Code Samples</a></li>
 </ul>
@@ -137,9 +141,62 @@
             
   <div class="section" id="running-the-code">
 <h1>Running the Code<a class="headerlink" href="#running-the-code" title="Permalink to this headline">¶</a></h1>
+<p>Please see below for the relevant programming languages to run EasyMSX Sample.</p>
+<div class="section" id="easymsx-python">
+<h2>EasyMSX Python<a class="headerlink" href="#easymsx-python" title="Permalink to this headline">¶</a></h2>
+<p>The EasyMSX Python folder consists of the core code samples for EasyMSX in python. The <code class="docutils literal"><span class="pre">EasyMSXSample.py</span></code> is the sample to use for python.</p>
 <p>Please run <code class="docutils literal"><span class="pre">EasyMSXSample.py</span></code> inside the EasyMSXPython folder to run the example in python.</p>
-<p>The EasyMSX wrapper for Java and C# / .NET will be released shortly.</p>
-<p>The github link to the EasyMSX sample in <a class="reference external" href="https://github.com/tkim/EasyMSXRepository.git">python</a>.</p>
+<p>The GitHub link to the EasyMSX sample in <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/Python/p2_EasyMSX">python</a>.</p>
+</div>
+<div class="section" id="easymsx-csharp">
+<h2>EasyMSX CSharp<a class="headerlink" href="#easymsx-csharp" title="Permalink to this headline">¶</a></h2>
+<p>The EasyMSX in C Sharp works similarly as EasyMSXpython. For running EasyMSX in C Sharp, the user needs to reference the following on EasyMSXSample before building and running the code sample.</p>
+<ul class="simple">
+<li>Bloomberg API SDK in CSharp</li>
+<li>EasyMSX.dll</li>
+</ul>
+<p>The GitHub link to the EasyMSX sample in <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/CSharp">C Sharp</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<blockquote>
+<div>Bloomberg API SDK in CSharp <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\blp\DAPI\APIv3\DotnetAPI\v3.8.9.2\lib\Bloomberglp.Blpapi.dll</span></code></div></blockquote>
+<p class="last">EasyMSX.dll <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\...</span> <span class="pre">\cs_EasyMSX-master\EasyMSX\bin\Debug\EasyMSX.dll</span></code></p>
+</div>
+</div>
+<div class="section" id="easymkt">
+<h2>EasyMKT<a class="headerlink" href="#easymkt" title="Permalink to this headline">¶</a></h2>
+<p>The EasyMKT and EasyMKTSample are currently available only in C Sharp. For running EasyMKT in C Sharp, the user needs to reference the following on EasyMKTSample before building and running the code sample.</p>
+<ul class="simple">
+<li>Bloomberg API SDK in CSharp</li>
+<li>EasyMKT.dll</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Bloomberg API SDK in CSharp <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\blp\DAPI\APIv3\DotnetAPI\v3.8.9.2\lib\Bloomberglp.Blpapi.dll</span></code></p>
+<p class="last">EasyMKT.dll <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\...</span> <span class="pre">\cs_EasyMKT-master\EasyMKT\bin\Debug\EasyMKT.dll</span></code></p>
+</div>
+</div>
+<div class="section" id="rulemsx">
+<h2>RuleMSX<a class="headerlink" href="#rulemsx" title="Permalink to this headline">¶</a></h2>
+<p>The RuleMSX and RuleMSXSample are currently only available in C Sharp. For running RuleMSX in C Sharp, the user needs to reference the following on RuleMSXSample before building and running the code sample.</p>
+<ul class="simple">
+<li>Bloomberg API SDK in CSharp</li>
+<li>EasyMKT.dll</li>
+<li>EasyMSX.dll</li>
+<li>RuleMSX.dll</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Bloomberg API SDK in CSharp <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\blp\DAPI\APIv3\DotnetAPI\v3.8.9.2\lib\Bloomberglp.Blpapi.dll</span></code></p>
+<p>EasyMKT.dll <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\...</span> <span class="pre">\cs_EasyMKT-master\EasyMKT\bin\Debug\EasyMKT.dll</span></code></p>
+<p>EasyMSX.dll <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\...</span> <span class="pre">\cs_EasyMSX-master\EasyMSX\bin\Debug\EasyMSX.dll</span></code></p>
+<p class="last">RuleMSX.dll <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\...</span> <span class="pre">\cs_RuleMSX-master\RuleMSX\bin\Debug\RuleMSX.dll</span></code></p>
+</div>
+</div>
+<div class="section" id="full-easymsx-code-samples">
+<h2>Full EasyMSX Code Samples<a class="headerlink" href="#full-easymsx-code-samples" title="Permalink to this headline">¶</a></h2>
+<p>The link to the main <a class="reference external" href="https://github.com/tkim/EasyMSXRepository">EasyMSX Code Sample</a>.</p>
+</div>
 <div class="section" id="full-emsx-api-documentation">
 <h2>Full EMSX API Documentation<a class="headerlink" href="#full-emsx-api-documentation" title="Permalink to this headline">¶</a></h2>
 <p>The link to the main <a class="reference external" href="http://emsx-api-doc.readthedocs.io/en/latest/">EMSX API Documentation</a>.</p>
@@ -158,7 +215,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="introduction.html" class="btn btn-neutral" title="Introduction" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="EasyMSX Documentation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -189,7 +246,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.1.1',
+            VERSION:'0.2.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
