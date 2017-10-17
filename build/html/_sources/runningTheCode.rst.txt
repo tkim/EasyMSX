@@ -15,8 +15,8 @@ Please run ``EasyMSXSample.py`` inside the EasyMSXPython folder to run the examp
 The GitHub link to the EasyMSX sample in `python`_.
 
 
-EasyMSX CSharp
-==============
+EasyMSX C Sharp
+===============
 
 The EasyMSX in C Sharp works similarly as EasyMSXpython. For running EasyMSX in C Sharp, the user needs to reference the following on EasyMSXSample before building and running the code sample.
 
@@ -33,8 +33,8 @@ The GitHub link to the EasyMSX sample in `C Sharp`_.
     EasyMSX.dll ``e.g. c:\... \cs_EasyMSX-master\EasyMSX\bin\Debug\EasyMSX.dll``
 
 
-EasyMKT
-=======
+EasyMKT C Sharp
+===============
 
 The EasyMKT and EasyMKTSample are currently available only in C Sharp. For running EasyMKT in C Sharp, the user needs to reference the following on EasyMKTSample before building and running the code sample.
 
@@ -49,8 +49,8 @@ The EasyMKT and EasyMKTSample are currently available only in C Sharp. For runni
 	EasyMKT.dll ``e.g. c:\... \cs_EasyMKT-master\EasyMKT\bin\Debug\EasyMKT.dll``
 
 
-RuleMSX
-=======
+RuleMSX C Sharp
+===============
 
 The RuleMSX and RuleMSXSample are currently only available in C Sharp. For running RuleMSX in C Sharp, the user needs to reference the following on RuleMSXSample before building and running the code sample.
 
