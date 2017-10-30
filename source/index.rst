@@ -23,5 +23,6 @@ The RuleMSX is a business rule management project using Bloomberg EMSX API for t
    :maxdepth: 2
    :caption: Table of Contents:
 
+   ruleMSX
    runningTheCode
 
