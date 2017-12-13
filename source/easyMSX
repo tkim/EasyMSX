@@ -1,0 +1,12 @@
+#######
+EasyMSX 
+#######
+
+
+EasyMSX wrapper maintaints three categories of notification of events. They are Order Subscription, Route Subscrpition and Administrative messages. Each categories show notification types 
+
+
+EasyMSXTest
+===========
+
+EasyMSXTest is an application that uses EasyMSX to extract the delta's from EMSX API Order and Route subscription service.
