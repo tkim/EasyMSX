@@ -1,4 +1,4 @@
-#######
+ #######
 RuleMSX 
 #######
 
@@ -33,7 +33,6 @@ As part of the reiteration of RuleMSX, we have made the changes to reflect the r
 				* Rule
 
 The current RuleMSX is setup with the following structure:
-
 
 	* RuleSet
 		* Patterns
