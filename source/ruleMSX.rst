@@ -9,7 +9,7 @@ A pattern contains one or more rules. All the rules in a pattern must evaluate t
 RETE Algorithm
 ==============
 
-
+(More on RETE Algorithm)
 
 
 Earlier Version
