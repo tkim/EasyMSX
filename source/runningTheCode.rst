@@ -51,7 +51,7 @@ The EasyMKT and EasyMKTSample are currently available only in C Sharp. For runni
 RuleMSX Python
 ===============
 
-The link to the python RuleMSX `python RuleMSX`_.
+The link to the `python RuleMSX`_.
 
 
 RuleMSX C Sharp
