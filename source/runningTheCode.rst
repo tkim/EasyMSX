@@ -48,11 +48,16 @@ The EasyMKT and EasyMKTSample are currently available only in C Sharp. For runni
 
 	EasyMKT.dll ``e.g. c:\... \cs_EasyMKT-master\EasyMKT\bin\Debug\EasyMKT.dll``
 
+RuleMSX Python
+===============
+
+The link to the python RuleMSX `python RuleMSX`_.
+
 
 RuleMSX C Sharp
 ===============
 
-The RuleMSX and RuleMSXSample are currently only available in C Sharp. For running RuleMSX in C Sharp, the user needs to reference the following on RuleMSXSample before building and running the code sample.
+ For running RuleMSX in C Sharp, the user needs to reference the following on RuleMSXSample before building and running the code sample.
 
 * Bloomberg API SDK in CSharp 
 * EasyMKT.dll  
@@ -91,10 +96,12 @@ The github link to the `EMSX API Code Sample`_.
 
 
 
-.. _python: https://github.com/tkim/EasyMSXRepository/tree/master/Python/p2_EasyMSX
+.. _python: https://github.com/tkim/EasyMSXRepository/tree/master/Python/py_EasyMSX-master
 
 .. _C Sharp: https://github.com/tkim/EasyMSXRepository/tree/master/CSharp
 
+
+.. _python RuleMSX: https://github.com/tkim/EasyMSXRepository/tree/master/Python/py_RuleMSX-master
 
 .. _EasyMSX Code Sample: https://github.com/tkim/EasyMSXRepository
 
