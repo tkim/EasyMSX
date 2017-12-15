@@ -1,4 +1,4 @@
- #######
+#######
 RuleMSX 
 #######
 
@@ -15,37 +15,16 @@ RETE Algorithm
 Earlier Version
 ===============
 
-The initial approach to RuleMSX handled the rete in the following structure:
+The initial approach to RuleMSX handled the rete in the following structure
 
-	* RuleSet
-		* Rule
-			* ChildRules
-			* RuleEvaluator
-			* Action
-				* ActionExecutor
+
+.. image:: /image/RuleMSX.png
 
 
 As part of the reiteration of RuleMSX, we have made the changes to reflect the rete algorithm in the following structure: 
 
-	* RuleSet
-		* Pattern
-			* Rules
-				* Rule
 
-The current RuleMSX is setup with the following structure:
-
-	* RuleSet
-		* Patterns
-			* Pattern
-				* PatternAction
-
-	    * Rules
-	    	* Rule
-	        	* RuleEvaluator
-
-		* Actions
-			* Action
-				* ActionExecutor
+.. image:: /image/RuleMSXNew.png
 
 
 
