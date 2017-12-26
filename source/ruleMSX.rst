@@ -15,7 +15,7 @@ RETE Algorithm
 Earlier Version
 ===============
 
-The initial approach to RuleMSX handled the rete in the following structure
+The initial approach to RuleMSX handled the rete in the following structure where each RuleSet consists of a single rule. Each rule consisted of child rules and rule evaluator.
 
 
 .. image:: /image/RuleMSX.png

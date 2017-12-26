@@ -2,8 +2,7 @@
 EasyMSX 
 #######
 
-
-EasyMSX wrapper maintaints three categories of notification of events. They are Order Subscription, Route Subscrpition and Administrative messages. Each categories show notification types 
+EasyMSX wrapper maintains three categories of notification of events. They are Order Subscription, Route Subscription, and Administrative messages. Each category shows notification types.
 
 
 EasyMSXTest
