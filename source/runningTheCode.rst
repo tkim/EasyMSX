@@ -145,6 +145,7 @@ RuleMSX C Sharp
 	RuleMSX.dll ``e.g. c:\... \cs_RuleMSX-master\RuleMSX\bin\Debug\RuleMSX.dll`` 
 
 
+
 ###############
 Other Resources
 ###############
@@ -182,3 +183,5 @@ The github link to the `EMSX API Code Sample`_.
 .. _EMSX API Documentation: http://emsx-api-doc.readthedocs.io/en/latest/
 
 .. _EMSX API Code Sample: https://github.com/tkim/emsx_api_repository
+
+
