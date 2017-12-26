@@ -9,7 +9,12 @@ A pattern contains one or more rules. All the rules in a pattern must evaluate t
 RETE Algorithm
 ==============
 
-(More on RETE Algorithm)
+The word rete is Latin for net or network. 
+The rete algorithm is essentially a pattern matching algorithm. 
+
+The main objective behind rete algorithm for RuleMSX is to decouple the various trading or business rules from rule execution or executing sequences on a particular data set. 
+
+The data set here can be both trading data obtained from EMSX API, market data, or non-trading based proprietary data set.
 
 
 Earlier Version
