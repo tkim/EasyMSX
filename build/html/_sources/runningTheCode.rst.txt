@@ -145,6 +145,10 @@ RuleMSX C Sharp
 	RuleMSX.dll ``e.g. c:\... \cs_RuleMSX-master\RuleMSX\bin\Debug\RuleMSX.dll`` 
 
 
+###############
+Other Resources
+###############
+
 
 Full EasyMSX Code Samples
 =========================
