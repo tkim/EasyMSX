@@ -88,11 +88,15 @@
 <li class="toctree-l1"><a class="reference internal" href="easyMSX.html">EasyMSX</a></li>
 <li class="toctree-l1"><a class="reference internal" href="easyMKT.html">EasyMKT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ruleMSX.html">RuleMSX</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Running the Code</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Running the Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#python">Python</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#easymsx-python">EasyMSX Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rulemsx-python">RuleMSX Python</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#c-sharp">C Sharp</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#easymsx-c-sharp">EasyMSX C Sharp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#easymkt-c-sharp">EasyMKT C Sharp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#rulemsx-python">RuleMSX Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rulemsx-c-sharp">RuleMSX C Sharp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#full-easymsx-code-samples">Full EasyMSX Code Samples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#full-emsx-api-documentation">Full EMSX API Documentation</a></li>
@@ -146,12 +150,76 @@
   <div class="section" id="running-the-code">
 <h1>Running the Code<a class="headerlink" href="#running-the-code" title="Permalink to this headline">¶</a></h1>
 <p>Please see below for the relevant programming languages to run EasyMSX Sample.</p>
+</div>
+<div class="section" id="python">
+<h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="easymsx-python">
 <h2>EasyMSX Python<a class="headerlink" href="#easymsx-python" title="Permalink to this headline">¶</a></h2>
 <p>The EasyMSX Python folder consists of the core code samples for EasyMSX in python. The <code class="docutils literal"><span class="pre">EasyMSXSample.py</span></code> is the sample to use for python.</p>
 <p>Please run <code class="docutils literal"><span class="pre">EasyMSXSample.py</span></code> inside the EasyMSXPython folder to run the example in python.</p>
-<p>The GitHub link to the EasyMSX sample in <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/Python/py_EasyMSX-master">python</a>.</p>
+<p>The GitHub link to the EasyMSX sample in <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/Python">python</a>.</p>
 </div>
+<div class="section" id="rulemsx-python">
+<h2>RuleMSX Python<a class="headerlink" href="#rulemsx-python" title="Permalink to this headline">¶</a></h2>
+<p>The new python RuleMSX runs in Python 3. This particular build was tested with Python 3.4 in windows 10.</p>
+<ul class="simple">
+<li>Create new directory and extract easymsx-1.0.0 and rulemsx-1.0.0 into the new directory.</li>
+</ul>
+<div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;dir
+Volume in drive C is Windows
+Volume Serial Number is ABCD-1234
+
+Directory of C:\Users\Me\_rulemsx
+
+12/21/2017  09:08 AM    &lt;DIR&gt;          .
+12/21/2017  09:08 AM    &lt;DIR&gt;          ..
+12/21/2017  09:01 AM    &lt;DIR&gt;          easymsx-1.0.0
+12/21/2017  09:01 AM    &lt;DIR&gt;          rulemsx-1.0.0
+12/21/2017  09:01 AM    &lt;DIR&gt;          RuleMSXDemo.py
+               1 File(s)              0 bytes
+               4 Dir(s)  11,538,878,464 bytes free
+</pre></div>
+</div>
+<ul class="simple">
+<li>Change directory to rulemsx-1.0.0 and in the directory run the following command:-</li>
+</ul>
+<div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;cd rulemsx-1.0.0
+
+C:\Users\Me\_rulemsx\rulemsx-1.0.0&gt;C:\Python34\python.exe setup.py install
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please make sure the path for python is set to where you currently have your python 3 installed.</p>
+</div>
+<ul class="simple">
+<li>Change directory to easymsx-1.0.0 and in the diretory run the following command:-</li>
+</ul>
+<div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;cd easymsx-1.0.0
+
+C:\Users\Me\_rulemsx\easymsx-1.0.0&gt;C:\Python34\python.exe setup.py install
+</pre></div>
+</div>
+<ul class="simple">
+<li>Run RuleMSXDemo.py</li>
+</ul>
+<div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;py -3 RuleMSXDemo.py
+Initialising RuleMSX...
+RuleMSX initialised...
+Initialising EasyMSX...
+EasyMSX initialised...
+Create RuleSet...
+Building Rules...
+Rules built.
+RuleSet ready...
+Press any to terminate
+</pre></div>
+</div>
+<p>The link to the <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/Python">python RuleMSX</a>.</p>
+</div>
+</div>
+<div class="section" id="c-sharp">
+<h1>C Sharp<a class="headerlink" href="#c-sharp" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="easymsx-c-sharp">
 <h2>EasyMSX C Sharp<a class="headerlink" href="#easymsx-c-sharp" title="Permalink to this headline">¶</a></h2>
 <p>The EasyMSX in C Sharp works similarly as EasyMSXpython. For running EasyMSX in C Sharp, the user needs to reference the following on EasyMSXSample before building and running the code sample.</p>
@@ -179,10 +247,6 @@
 <p>Bloomberg API SDK in CSharp <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\blp\DAPI\APIv3\DotnetAPI\v3.8.9.2\lib\Bloomberglp.Blpapi.dll</span></code></p>
 <p class="last">EasyMKT.dll <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\...</span> <span class="pre">\cs_EasyMKT-master\EasyMKT\bin\Debug\EasyMKT.dll</span></code></p>
 </div>
-</div>
-<div class="section" id="rulemsx-python">
-<h2>RuleMSX Python<a class="headerlink" href="#rulemsx-python" title="Permalink to this headline">¶</a></h2>
-<p>The link to the <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/Python/py_RuleMSX-master">python RuleMSX</a>.</p>
 </div>
 <div class="section" id="rulemsx-c-sharp">
 <h2>RuleMSX C Sharp<a class="headerlink" href="#rulemsx-c-sharp" title="Permalink to this headline">¶</a></h2>
