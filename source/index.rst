@@ -3,7 +3,7 @@ EasyMSX Documentation
 #####################
 
 
-The EasyMSX code samples are various projects to demonstrate how Bloomberg EMSX API along with other Bloomberg API and industry standard algorithms can be implemented for building an efficient trading environment.
+The EasyMSX code samples are various projects to demonstrate how Bloomberg EMSX API along with other Bloomberg API and industry standard algorithms can be implemented for building and implementing an efficient trading environment.
 
 The EasyMSX wrapper is a code sample that can be compiled into a library. The EasyMSX are set of files to build a project that demonstrates one possible way to build caching data or a starting place to work with Bloomberg EMSX API.
 
