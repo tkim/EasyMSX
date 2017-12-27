@@ -86,10 +86,16 @@
             
                 <p class="caption"><span class="caption-text">Table of Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">EasyMSX</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EasyMSX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#easymsxtest">EasyMSXTest</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="easyMKT.html">EasyMKT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ruleMSX.html">RuleMSX</a></li>
 <li class="toctree-l1"><a class="reference internal" href="runningTheCode.html">Running the Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runningTheCode.html#python">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runningTheCode.html#c-sharp">C Sharp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runningTheCode.html#other-resources">Other Resources</a></li>
 </ul>
 
             
@@ -136,7 +142,13 @@
             
   <div class="section" id="easymsx">
 <h1>EasyMSX<a class="headerlink" href="#easymsx" title="Permalink to this headline">¶</a></h1>
+<p>The EMSX API is just another service in Bloomberg API V3.  The Bloomberg API follows an event-driven asynchronous API paradigm.</p>
+<p>The Bloomberg API is lightweight, thread safe and maintains extensible service-oriented data model. The Bloomberg API generally understands the concept of subscription and request-response services.</p>
 <p>The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions.</p>
+<div class="section" id="easymsxtest">
+<h2>EasyMSXTest<a class="headerlink" href="#easymsxtest" title="Permalink to this headline">¶</a></h2>
+<p>EasyMSXTest is an application that uses EasyMSX to extract the delta&#8217;s from EMSX API Order and Route subscription service.</p>
+</div>
 </div>
 
 
