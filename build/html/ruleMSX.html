@@ -34,7 +34,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="EasyMSXDoc 0.2.1 documentation" href="index.html"/>
-        <link rel="next" title="Running the Code" href="runningTheCode.html"/>
+        <link rel="next" title="Other Resources" href="otherResources.html"/>
         <link rel="prev" title="EasyMKT" href="easyMKT.html"/> 
 
   
@@ -91,11 +91,11 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">RuleMSX</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#rete-algorithm">RETE Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#earlier-version">Earlier Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rulemsx-c-sharp">RuleMSX C Sharp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rulemsx-python">RuleMSX Python</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="runningTheCode.html">Running the Code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="runningTheCode.html#python">Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="runningTheCode.html#c-sharp">C Sharp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="otherResources.html">Other Resources</a></li>
 </ul>
 
             
@@ -159,6 +159,83 @@ The rete algorithm is essentially a pattern matching algorithm.</p>
 <p>As part of the reiteration of RuleMSX, we have made the changes to reflect the rete algorithm in the following structure:</p>
 <img alt="_images/RuleMSXNew.png" src="_images/RuleMSXNew.png" />
 </div>
+<div class="section" id="rulemsx-c-sharp">
+<h2>RuleMSX C Sharp<a class="headerlink" href="#rulemsx-c-sharp" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>For running RuleMSX in C Sharp, the user needs to reference the following on RuleMSXSample before building and running the code sample.</div></blockquote>
+<ul class="simple">
+<li>Bloomberg API SDK in CSharp</li>
+<li>EasyMKT.dll</li>
+<li>EasyMSX.dll</li>
+<li>RuleMSX.dll</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Bloomberg API SDK in CSharp <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\blp\DAPI\APIv3\DotnetAPI\v3.8.9.2\lib\Bloomberglp.Blpapi.dll</span></code></p>
+<p>EasyMKT.dll <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\...</span> <span class="pre">\cs_EasyMKT-master\EasyMKT\bin\Debug\EasyMKT.dll</span></code></p>
+<p>EasyMSX.dll <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\...</span> <span class="pre">\cs_EasyMSX-master\EasyMSX\bin\Debug\EasyMSX.dll</span></code></p>
+<p class="last">RuleMSX.dll <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\...</span> <span class="pre">\cs_RuleMSX-master\RuleMSX\bin\Debug\RuleMSX.dll</span></code></p>
+</div>
+<p>The link to the <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/CSharp">c sharp RuleMSX</a>.</p>
+</div>
+<div class="section" id="rulemsx-python">
+<h2>RuleMSX Python<a class="headerlink" href="#rulemsx-python" title="Permalink to this headline">¶</a></h2>
+<p>The new python RuleMSX runs in Python 3. This particular build was tested with Python 3.4 in windows 10.</p>
+<ul class="simple">
+<li>Create new directory and extract easymsx-1.0.0 and rulemsx-1.0.0 into the new directory.</li>
+</ul>
+<div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;dir
+Volume in drive C is Windows
+Volume Serial Number is ABCD-1234
+
+Directory of C:\Users\Me\_rulemsx
+
+12/21/2017  09:08 AM    &lt;DIR&gt;          .
+12/21/2017  09:08 AM    &lt;DIR&gt;          ..
+12/21/2017  09:01 AM    &lt;DIR&gt;          easymsx-1.0.0
+12/21/2017  09:01 AM    &lt;DIR&gt;          rulemsx-1.0.0
+12/21/2017  09:01 AM    &lt;DIR&gt;          RuleMSXDemo.py
+               1 File(s)              0 bytes
+               4 Dir(s)  11,538,878,464 bytes free
+</pre></div>
+</div>
+<ul class="simple">
+<li>Change directory to rulemsx-1.0.0 and in the directory run the following command:-</li>
+</ul>
+<div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;cd rulemsx-1.0.0
+
+C:\Users\Me\_rulemsx\rulemsx-1.0.0&gt;C:\Python34\python.exe setup.py install
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please make sure the path for python is set to where you currently have your python 3 installed.</p>
+</div>
+<ul class="simple">
+<li>Change directory to easymsx-1.0.0 and in the diretory run the following command:-</li>
+</ul>
+<div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;cd easymsx-1.0.0
+
+C:\Users\Me\_rulemsx\easymsx-1.0.0&gt;C:\Python34\python.exe setup.py install
+</pre></div>
+</div>
+<ul class="simple">
+<li>Run RuleMSXDemo.py</li>
+</ul>
+<div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;py -3 RuleMSXDemo.py
+Initialising RuleMSX...
+RuleMSX initialised...
+Initialising EasyMSX...
+EasyMSX initialised...
+Create RuleSet...
+Building Rules...
+Rules built.
+RuleSet ready...
+Press any to terminate
+</pre></div>
+</div>
+<p>The link to the <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/Python">python RuleMSX</a>.</p>
+</div>
 </div>
 
 
@@ -168,7 +245,7 @@ The rete algorithm is essentially a pattern matching algorithm.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="runningTheCode.html" class="btn btn-neutral float-right" title="Running the Code" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="otherResources.html" class="btn btn-neutral float-right" title="Other Resources" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="easyMKT.html" class="btn btn-neutral" title="EasyMKT" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
