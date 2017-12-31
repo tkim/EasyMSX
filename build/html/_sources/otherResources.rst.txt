@@ -21,7 +21,10 @@ Full EMSX API Code Samples
 The github link to the `EMSX API Code Sample`_. 
 
 
+Full Bloomberg API Developer Guide
+==================================
 
+The link to the `Open API Core Developer Guide`_.
 
 
 
@@ -32,5 +35,8 @@ The github link to the `EMSX API Code Sample`_.
 .. _EMSX API Documentation: http://emsx-api-doc.readthedocs.io/en/latest/
 
 .. _EMSX API Code Sample: https://github.com/tkim/emsx_api_repository
+
+
+.. _Open API Core Developer Guide: https://data.bloomberglp.com/professional/sites/10/2017/03/BLPAPI-Core-Developer-Guide.pdf
 
 

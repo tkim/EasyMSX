@@ -12,7 +12,7 @@ The EasyMSX allows getting orders, routes, and static data from EMSX API service
 EasyMSXTest
 ===========
 
-EasyMSXTest is an application that uses EasyMSX to extract the delta's from EMSX API Order and Route subscription service.
+The EasyMSXTest is a sample application to test EasyMSX to extract the delta's from EMSX API Order and Route subscription service.
 
 
 EasyMSX C Sharp
