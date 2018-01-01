@@ -1,6 +1,6 @@
-###############
-Other Resources
-###############
+########
+Resource
+########
 
 
 Full EasyMSX Code Samples

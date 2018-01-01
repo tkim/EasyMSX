@@ -26,5 +26,5 @@ The RuleMSX is a business rule management project using Bloomberg EMSX API for t
    easyMSX
    easyMKT
    ruleMSX
-   otherResources
+   resource
 
