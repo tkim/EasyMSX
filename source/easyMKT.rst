@@ -27,9 +27,21 @@ The Github link to the EasyMKT sample in `c sharp EasyMKT`_.
 EasyMKT Python
 ==============
 
-The EasyMKT Python folder consists of the core code samples for EasyMSX in python. The ``EasyMSXSample.py`` is the sample to use for python.
+The EasyMKT Python folder consists of the core code samples for EasyMSX in python. The ``easymktdemo.py`` is the sample to use for python.
 
-Please run ``EasyMKTSample.py`` inside the EasyMKTPython folder to run the example in python. 
+* Please download the easymktdemo folder and extract easymktdemo into easymkt-1.0.0 folder.
+
+* Change directory to easymkt-1.0.0 and in the directory run the following command:-
+
+.. code-block:: none
+
+	C:\Users\Me\easymkt-1.0.0>C:\Python34\python.exe setup.py install
+
+
+.. note::
+	
+	Please make sure the path for python is set to where you currently have your python 3 installed. 
+
 
 The GitHub link to the EasyMKT sample in `python EasyMKT`_.
 
