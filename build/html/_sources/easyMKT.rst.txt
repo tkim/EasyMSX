@@ -8,7 +8,7 @@ The EasyMKT and EasyMKTSample demonstrates one possible way to build caching dat
 EasyMKT C Sharp
 ===============
 
-The EasyMKT and EasyMKTSample are currently available only in C Sharp. For running EasyMKT in C Sharp, the user needs to reference the following on EasyMKTSample before building and running the code sample.
+The EasyMKT C Sharp folder consists of the core code samples for EasyMKT in C Sharp. For running EasyMKT in C Sharp, the user needs to reference the following on EasyMKTSample before building and running the code sample.
 
 * Bloomberg API SDK in CSharp
 * EasyMKT.dll 
@@ -22,4 +22,17 @@ The EasyMKT and EasyMKTSample are currently available only in C Sharp. For runni
 The Github link to the EasyMKT sample in `c sharp EasyMKT`_.
 
 .. _c sharp EasyMKT: https://github.com/tkim/EasyMSXRepository/tree/master/CSharp
+
+
+EasyMKT Python
+==============
+
+The EasyMKT Python folder consists of the core code samples for EasyMSX in python. The ``EasyMSXSample.py`` is the sample to use for python.
+
+Please run ``EasyMSXSample.py`` inside the EasyMSXPython folder to run the example in python. 
+
+The GitHub link to the EasyMSX sample in `python EasyMSX`_.
+
+.. _python EasyMSX: https://github.com/tkim/EasyMSXRepository/tree/master/Python
+
 
