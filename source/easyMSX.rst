@@ -2,29 +2,23 @@
 EasyMSX 
 #######
 
-The EMSX API is just another service in Bloomberg API V3.  The Bloomberg API follows an event-driven asynchronous API paradigm. 
-
-The Bloomberg API is lightweight, thread safe and maintains extensible service-oriented data model. The Bloomberg API generally understands the concept of subscription and request-response services.
-
 The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions.  
 
+The ``EasyMSXSample`` in C Sharp illustrates how to use ``EasyMSX`` in C Sharp. 
 
-EasyMSXTest
-===========
-
-The EasyMSXTest is a sample application to test EasyMSX to extract the delta's from EMSX API Order and Route subscription service.
+The ``easymsxdemo-1.0.0`` in python illustrates what can be done with ``easymsx`` in python.
 
 
 EasyMSX C Sharp
 ===============
 
-The EasyMSX in C Sharp works similarly as EasyMSXpython. For running EasyMSX in C Sharp, the user needs to reference the following on EasyMSXSample before building and running the code sample.
+For running ``EasyMSX`` in C Sharp, the user needs to reference the following on ``EasyMSXSample`` before building and running the code sample.
 
 * Bloomberg API SDK in CSharp 
 * EasyMSX.dll  
 
 
-The GitHub link to the EasyMSX sample in `c sharp EasyMSX`_.
+The GitHub link to the EasyMSX sample in `C Sharp EasyMSX`_.
 
 .. note::
 
@@ -33,15 +27,28 @@ The GitHub link to the EasyMSX sample in `c sharp EasyMSX`_.
     EasyMSX.dll ``e.g. c:\... \cs_EasyMSX-master\EasyMSX\bin\Debug\EasyMSX.dll``
 
 
-.. _c sharp EasyMSX: https://github.com/tkim/EasyMSXRepository/tree/master/CSharp
+.. _C Sharp EasyMSX: https://github.com/tkim/EasyMSXRepository/tree/master/CSharp
 
 
 EasyMSX Python
 ==============
 
-The EasyMSX Python folder consists of the core code samples for EasyMSX in python. The ``EasyMSXSample.py`` is the sample to use for python.
+The ``easymsx-1.0.0`` inside the Python folder consists of the core code samples for ``easymsx`` in python. The ``easymsxdemo.py`` is the demo script to use for python.
 
-Please run ``EasyMSXSample.py`` inside the EasyMSXPython folder to run the example in python. 
+
+* Please download the ``easymsxdemo`` folder and extract ``easymsxdemo`` into ``easymsx-1.0.0`` folder.
+
+* Change directory to ``easymsx-1.0.0`` and in the directory run the following command:-
+
+.. code-block:: none
+
+	C:\Users\Me\easymsx-1.0.0>C:\Python34\python.exe setup.py install
+
+
+.. note::
+	
+	Please make sure the path for python is set to where you currently have your python 3 installed. 
+
 
 The GitHub link to the EasyMSX sample in `python EasyMSX`_.
 

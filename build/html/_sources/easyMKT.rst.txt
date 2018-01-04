@@ -2,16 +2,21 @@
 EasyMKT 
 #######
 
-The EasyMKT and EasyMKTSample demonstrates one possible way to build caching data on Bloomberg real-time market data.
+The EasyMKT and EasyMKTSample demonstrate one possible way to build caching data on Bloomberg real-time market data.
 
+The ``EasyMKTSample`` in C Sharp illustrates how to use ``EasyMSX`` in C Sharp.
+
+The ``easymktdemo-1.0.0`` in python illustrates what can be done with ``easymkt`` in python. 
 
 EasyMKT C Sharp
 ===============
 
-The EasyMKT C Sharp folder consists of the core code samples for EasyMKT in C Sharp. For running EasyMKT in C Sharp, the user needs to reference the following on EasyMKTSample before building and running the code sample.
+For running ``EasyMKT`` in C Sharp, the user needs to reference the following on ``EasyMKTSample`` before building and running the code sample.
 
 * Bloomberg API SDK in CSharp
 * EasyMKT.dll 
+
+The Github link to the EasyMKT in `C Sharp EasyMKT`_.
 
 .. note::
 
@@ -19,19 +24,19 @@ The EasyMKT C Sharp folder consists of the core code samples for EasyMKT in C Sh
 
 	EasyMKT.dll ``e.g. c:\... \cs_EasyMKT-master\EasyMKT\bin\Debug\EasyMKT.dll``
  
-The Github link to the EasyMKT sample in `c sharp EasyMKT`_.
 
-.. _c sharp EasyMKT: https://github.com/tkim/EasyMSXRepository/tree/master/CSharp
+.. _C Sharp EasyMKT: https://github.com/tkim/EasyMSXRepository/tree/master/CSharp
 
 
 EasyMKT Python
 ==============
 
-The EasyMKT Python folder consists of the core code samples for EasyMSX in python. The ``easymktdemo.py`` is the sample to use for python.
+The ``easymkt-1.0.0`` inside the Python folder consists of the core code samples for ``easymkt`` in python. The ``easymktdemo.py`` is the demo script to use for python.
 
-* Please download the easymktdemo folder and extract easymktdemo into easymkt-1.0.0 folder.
 
-* Change directory to easymkt-1.0.0 and in the directory run the following command:-
+* Please download the ``easymktdemo`` folder and extract ``easymktdemo`` into ``easymkt-1.0.0`` folder.
+
+* Change directory to ``easymkt-1.0.0`` and in the directory run the following command:-
 
 .. code-block:: none
 

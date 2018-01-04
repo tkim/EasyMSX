@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>EasyMSX &mdash; EasyMSXDoc 0.2.1 documentation</title>
+  <title>EasyMSX &mdash; EasyMSXDoc 0.3.1 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="EasyMSXDoc 0.2.1 documentation" href="index.html"/>
+    <link rel="top" title="EasyMSXDoc 0.3.1 documentation" href="index.html"/>
         <link rel="next" title="EasyMKT" href="easyMKT.html"/>
         <link rel="prev" title="EasyMSX Documentation" href="index.html"/> 
 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.2
+                0.3
               </div>
             
           
@@ -87,14 +87,13 @@
                 <p class="caption"><span class="caption-text">Table of Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">EasyMSX</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#easymsxtest">EasyMSXTest</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#easymsx-c-sharp">EasyMSX C Sharp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#easymsx-python">EasyMSX Python</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="easyMKT.html">EasyMKT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ruleMSX.html">RuleMSX</a></li>
-<li class="toctree-l1"><a class="reference internal" href="otherResources.html">Other Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resource.html">Resource</a></li>
 </ul>
 
             
@@ -141,21 +140,17 @@
             
   <div class="section" id="easymsx">
 <h1>EasyMSX<a class="headerlink" href="#easymsx" title="Permalink to this headline">¶</a></h1>
-<p>The EMSX API is just another service in Bloomberg API V3.  The Bloomberg API follows an event-driven asynchronous API paradigm.</p>
-<p>The Bloomberg API is lightweight, thread safe and maintains extensible service-oriented data model. The Bloomberg API generally understands the concept of subscription and request-response services.</p>
 <p>The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions.</p>
-<div class="section" id="easymsxtest">
-<h2>EasyMSXTest<a class="headerlink" href="#easymsxtest" title="Permalink to this headline">¶</a></h2>
-<p>The EasyMSXTest is a sample application to test EasyMSX to extract the delta&#8217;s from EMSX API Order and Route subscription service.</p>
-</div>
+<p>The <code class="docutils literal"><span class="pre">EasyMSXSample</span></code> in C Sharp illustrates how to use <code class="docutils literal"><span class="pre">EasyMSX</span></code> in C Sharp.</p>
+<p>The <code class="docutils literal"><span class="pre">easymsxdemo-1.0.0</span></code> in python illustrates what can be done with <code class="docutils literal"><span class="pre">easymsx</span></code> in python.</p>
 <div class="section" id="easymsx-c-sharp">
 <h2>EasyMSX C Sharp<a class="headerlink" href="#easymsx-c-sharp" title="Permalink to this headline">¶</a></h2>
-<p>The EasyMSX in C Sharp works similarly as EasyMSXpython. For running EasyMSX in C Sharp, the user needs to reference the following on EasyMSXSample before building and running the code sample.</p>
+<p>For running <code class="docutils literal"><span class="pre">EasyMSX</span></code> in C Sharp, the user needs to reference the following on <code class="docutils literal"><span class="pre">EasyMSXSample</span></code> before building and running the code sample.</p>
 <ul class="simple">
 <li>Bloomberg API SDK in CSharp</li>
 <li>EasyMSX.dll</li>
 </ul>
-<p>The GitHub link to the EasyMSX sample in <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/CSharp">c sharp EasyMSX</a>.</p>
+<p>The GitHub link to the EasyMSX sample in <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/CSharp">C Sharp EasyMSX</a>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <blockquote>
@@ -165,8 +160,18 @@
 </div>
 <div class="section" id="easymsx-python">
 <h2>EasyMSX Python<a class="headerlink" href="#easymsx-python" title="Permalink to this headline">¶</a></h2>
-<p>The EasyMSX Python folder consists of the core code samples for EasyMSX in python. The <code class="docutils literal"><span class="pre">EasyMSXSample.py</span></code> is the sample to use for python.</p>
-<p>Please run <code class="docutils literal"><span class="pre">EasyMSXSample.py</span></code> inside the EasyMSXPython folder to run the example in python.</p>
+<p>The <code class="docutils literal"><span class="pre">easymsx-1.0.0</span></code> inside the Python folder consists of the core code samples for <code class="docutils literal"><span class="pre">easymsx</span></code> in python. The <code class="docutils literal"><span class="pre">easymsxdemo.py</span></code> is the demo script to use for python.</p>
+<ul class="simple">
+<li>Please download the <code class="docutils literal"><span class="pre">easymsxdemo</span></code> folder and extract <code class="docutils literal"><span class="pre">easymsxdemo</span></code> into <code class="docutils literal"><span class="pre">easymsx-1.0.0</span></code> folder.</li>
+<li>Change directory to <code class="docutils literal"><span class="pre">easymsx-1.0.0</span></code> and in the directory run the following command:-</li>
+</ul>
+<div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\easymsx-1.0.0&gt;C:\Python34\python.exe setup.py install
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please make sure the path for python is set to where you currently have your python 3 installed.</p>
+</div>
 <p>The GitHub link to the EasyMSX sample in <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/Python">python EasyMSX</a>.</p>
 </div>
 </div>
@@ -212,7 +217,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.2.1',
+            VERSION:'0.3.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
