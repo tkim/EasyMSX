@@ -25,13 +25,13 @@ Earlier Version
 The initial approach to RuleMSX handled the rete in the following structure where each RuleSet consists of a single rule. Each rule consisted of child rules and rule evaluator.
 
 
-.. image:: /image/RuleMSX.png
+.. image:: /image/rete_orig.png
 
 
 As part of the reiteration of RuleMSX, we have made the changes to reflect the rete algorithm in the following structure: 
 
 
-.. image:: /image/RuleMSXNew.png
+.. image:: /image/rete_new.png
 
 
 RuleMSX C Sharp
