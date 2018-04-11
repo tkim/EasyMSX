@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -23,27 +25,21 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="EasyMSXDoc 0.3.1 documentation" href="index.html"/>
-        <link rel="next" title="EasyMKT" href="easyMKT.html"/>
-        <link rel="prev" title="EasyMSX Documentation" href="index.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="EasyMKT" href="easyMKT.html" />
+    <link rel="prev" title="EasyMSX Documentation" href="index.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -84,7 +80,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">EasyMSX</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#easymsx-c-sharp">EasyMSX C Sharp</a></li>
@@ -105,34 +104,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">EasyMSXDoc</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EasyMSXDoc</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>EasyMSX</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>EasyMSX</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/easyMSX.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -141,11 +160,11 @@
   <div class="section" id="easymsx">
 <h1>EasyMSX<a class="headerlink" href="#easymsx" title="Permalink to this headline">¶</a></h1>
 <p>The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions.</p>
-<p>The <code class="docutils literal"><span class="pre">EasyMSXSample</span></code> in C Sharp illustrates how to use <code class="docutils literal"><span class="pre">EasyMSX</span></code> in C Sharp.</p>
-<p>The <code class="docutils literal"><span class="pre">easymsxdemo-1.0.0</span></code> in python illustrates what can be done with <code class="docutils literal"><span class="pre">easymsx</span></code> in python.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">EasyMSXSample</span></code> in C Sharp illustrates how to use <code class="docutils literal notranslate"><span class="pre">EasyMSX</span></code> in C Sharp.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">easymsxdemo-1.0.0</span></code> in python illustrates what can be done with <code class="docutils literal notranslate"><span class="pre">easymsx</span></code> in python.</p>
 <div class="section" id="easymsx-c-sharp">
 <h2>EasyMSX C Sharp<a class="headerlink" href="#easymsx-c-sharp" title="Permalink to this headline">¶</a></h2>
-<p>For running <code class="docutils literal"><span class="pre">EasyMSX</span></code> in C Sharp, the user needs to reference the following on <code class="docutils literal"><span class="pre">EasyMSXSample</span></code> before building and running the code sample.</p>
+<p>For running <code class="docutils literal notranslate"><span class="pre">EasyMSX</span></code> in C Sharp, the user needs to reference the following on <code class="docutils literal notranslate"><span class="pre">EasyMSXSample</span></code> before building and running the code sample.</p>
 <ul class="simple">
 <li>Bloomberg API SDK in CSharp</li>
 <li>EasyMSX.dll</li>
@@ -154,18 +173,18 @@
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <blockquote>
-<div>Bloomberg API SDK in CSharp <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\blp\DAPI\APIv3\DotnetAPI\v3.8.9.2\lib\Bloomberglp.Blpapi.dll</span></code></div></blockquote>
-<p class="last">EasyMSX.dll <code class="docutils literal"><span class="pre">e.g.</span> <span class="pre">c:\...</span> <span class="pre">\cs_EasyMSX-master\EasyMSX\bin\Debug\EasyMSX.dll</span></code></p>
+<div>Bloomberg API SDK in CSharp <code class="docutils literal notranslate"><span class="pre">e.g.</span> <span class="pre">c:\blp\DAPI\APIv3\DotnetAPI\v3.8.9.2\lib\Bloomberglp.Blpapi.dll</span></code></div></blockquote>
+<p class="last">EasyMSX.dll <code class="docutils literal notranslate"><span class="pre">e.g.</span> <span class="pre">c:\...</span> <span class="pre">\cs_EasyMSX-master\EasyMSX\bin\Debug\EasyMSX.dll</span></code></p>
 </div>
 </div>
 <div class="section" id="easymsx-python">
 <h2>EasyMSX Python<a class="headerlink" href="#easymsx-python" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal"><span class="pre">easymsx-1.0.0</span></code> inside the Python folder consists of the core code samples for <code class="docutils literal"><span class="pre">easymsx</span></code> in python. The <code class="docutils literal"><span class="pre">easymsxdemo.py</span></code> is the demo script to use for python.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">easymsx-1.0.0</span></code> inside the Python folder consists of the core code samples for <code class="docutils literal notranslate"><span class="pre">easymsx</span></code> in python. The <code class="docutils literal notranslate"><span class="pre">easymsxdemo.py</span></code> is the demo script to use for python.</p>
 <ul class="simple">
-<li>Please download the <code class="docutils literal"><span class="pre">easymsxdemo</span></code> folder and extract <code class="docutils literal"><span class="pre">easymsxdemo</span></code> into <code class="docutils literal"><span class="pre">easymsx-1.0.0</span></code> folder.</li>
-<li>Change directory to <code class="docutils literal"><span class="pre">easymsx-1.0.0</span></code> and in the directory run the following command:-</li>
+<li>Please download the <code class="docutils literal notranslate"><span class="pre">easymsxdemo</span></code> folder and extract <code class="docutils literal notranslate"><span class="pre">easymsxdemo</span></code> into <code class="docutils literal notranslate"><span class="pre">easymsx-1.0.0</span></code> folder.</li>
+<li>Change directory to <code class="docutils literal notranslate"><span class="pre">easymsx-1.0.0</span></code> and in the directory run the following command:-</li>
 </ul>
-<div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\easymsx-1.0.0&gt;C:\Python34\python.exe setup.py install
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\Me\easymsx-1.0.0&gt;C:\Python34\python.exe setup.py install
 </pre></div>
 </div>
 <div class="admonition note">
@@ -178,15 +197,16 @@
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="easyMKT.html" class="btn btn-neutral float-right" title="EasyMKT" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="easyMKT.html" class="btn btn-neutral float-right" title="EasyMKT" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="EasyMSX Documentation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="EasyMSX Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -199,7 +219,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -218,9 +238,11 @@
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
             VERSION:'0.3.1',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
@@ -234,14 +256,13 @@
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>
