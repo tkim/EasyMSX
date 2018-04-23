@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>EasyMSX Documentation &mdash; EasyMSXDoc 0.3.1 documentation</title>
+  <title>EasyMSX Documentation &mdash; EasyMSXDoc 1.1.0 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                0.3
+                1.1
               </div>
             
           
@@ -158,7 +158,10 @@
 <p>The EasyMSX wrapper is a code sample that can be compiled into a library. The EasyMSX are set of files to build a project that demonstrates one possible way to build caching data or a starting place to work with Bloomberg EMSX API.</p>
 <p>The EMSX API is just another service in Bloomberg API V3.  The Bloomberg API follows an event-driven asynchronous API paradigm.</p>
 <p>The Bloomberg API is lightweight, thread safe and maintains extensible service-oriented data model. The Bloomberg API generally understands the concept of subscription and request-response services.</p>
-<p>Please note this is not a compiled binary. This is a CODE SAMPLE. There is no SLA (Service Level Agreement) or quality assessment or guarantees.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Please note that this is not a compiled binary. This is a CODE SAMPLE. There is no SLA (Service Level Agreement) or quality assessment or guarantees.</p>
+</div>
 <p>The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions.</p>
 <p>There are other additional code samples that can be used along with EasyMSX on this repository. They are EasyMKT and RuleMSX samples.</p>
 <p>The EasyMKT and EasyMKTSample are essentially an EasyMSX for market data where the project demonstrates one possible way to build caching data on Bloomberg real-time market data.</p>
@@ -187,6 +190,7 @@
 <li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#datapoints">DataPoints</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#datapointsource">DataPointSource</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#the-executionagent-process">The ExecutionAgent process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#emsx-route-status">EMSX Route Status</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#rete-algorithm">RETE Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#earlier-version">Earlier Version</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#rulemsx-c-sharp">RuleMSX C Sharp</a></li>
@@ -244,7 +248,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.3.1',
+            VERSION:'1.1.0',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

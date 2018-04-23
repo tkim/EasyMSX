@@ -128,6 +128,90 @@ The reason for doing this is that when a ``DataPointSource``’s value changes, 
 Following the ingestion process, the current ``OpenSetQueue`` becomes the ``OpenSet``, and the``OpenSetQueue`` is then reset to empty. The ``OpenSet`` is now iterated, and each ``WorkingRule`` in the queue is processed. Each ``Evaluator`` in the ``WorkingRule`` is fired, passing it the ``WorkingRule``’s ``DataSet``. If all ``Evaluators`` in the ``WorkingRule`` return true, then the action process begins. Each action associated with the ``WorkingRule`` is executed.
 
 
+EMSX Route Status
+=================
+
+The following elements are available for equity and options IOI subscription.
+
++----------------------+------------+------------+-------------------------------------------------+
+|Field                 |Previous    |New Value   |Definition                                       |
+|                      |Value       |            |                                                 |     
++======================+============+============+=================================================+
+|``EMSX_STATUS``       |null        |``SENT``    |New route (placement) created.                   |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``SENT``    |``SENT``    |Working amount set on route. (placement)         |
++----------------------+------------+------------+                                                 | 
+|``EMSX_WORKING``      |0           | >0         |(Can be ignored)                                 |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``SENT``    |``WORKING`` |ACK received from the broker.                    |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``WORKING`` |``PARTFILL``|First fill or multiple fills. (<100%)            |
++----------------------+------------+------------+                                                 |
+|``EMSX_WORKING``      |n           |<n and >0   |                                                 |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``PARTFILL``|``PARTFILL``|Middle fill or multiple fills. (<100%)           |
++----------------------+------------+------------+                                                 |
+|``EMSX_WORKING``      |n           |<n and >0   |                                                 |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``PARTFILL``|``FILLED``  |Final fill or multiple fills. (100%)             |
++----------------------+------------+------------+                                                 |
+|``EMSX_WORKING``      |>0          |0           |                                                 |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``WORKING`` |``FILLED``  |Full single fill.                                |
++----------------------+------------+------------+                                                 |
+|``EMSX_WORKING``      |>0          |0           |                                                 |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |null        |``FILLED``  |Historic 100% fill on ``INIT_PAINT``.            |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |null        |``WORKING`` |Working route (placement) on ``INIT_PAINT``.     |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |null        |``PARTFILL``|Part filled route (placement) on ``INIT_PAINT``. |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |null        |``CXLREQ``  |Cancel requested on route in ``INIT_PAINT``.     |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``WORKING`` |``CXLREQ``  |Cancel route request sent.                       |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``CXLREQ``  |``WORKING`` |Broker rejected cancel request.                  |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``CXLREQ``  |``CXLPEN``  |Broker sent ACK for cancel request.              |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``CXLPEN``  |``WORKING`` |Broker rejected cancel request.                  |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``CXLREQ``  |``CANCEL``  |Broker cancelled route from request.             |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``CXLPEN``  |``CANCEL``  |Broker cancelled route from request.             |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``PARTFILL``|``CXLREQ``  |Cancel requested on part filled route.           |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``CXLREQ``  |``PARTFILL``|Broker rejected cancel request.                  |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``CXLPEN``  |``PARTFILL``|Broker rejected cancel request.                  |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``WORKING`` |``CXLRPRQ`` |Modify (cancel/replace) request sent to broker.  |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``CXLRPRQ`` |``REPPEN``  |Broker sent ACK for modify request.              |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``REPPEN``  |``WORKING`` |Broker rejected modify request on working route. |
++----------------------+------------+------------+                                                 |
+|``EMSX_BROKER_STATUS``|n/a         |``CXLRPRJ`` |                                                 |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``REPPEN``  |``WORKING`` |Broker accepted and applied the modify request   |
++----------------------+------------+------------+on working route. (placement)                    |
+|``EMSX_BROKER_STATUS``|n/a         |``MODIFIED``|                                                 |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``PARTFILL``|``CXLRPRQ`` |Modify (cancel/replace) request sent to broker.  |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``REPPEN``  |``PARTFILL``|Broker rejected modify request on part filled    |
++----------------------+------------+------------+route. (placement)                               |
+|``EMSX_BROKER_STATUS``|n/a         |``CXLRPRJ`` |                                                 |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``REPPEN``  |``PARTFILL``|Broker accepted and applied the modify request   |
++----------------------+------------+------------+on part filled route. (placement)                |
+|``EMSX_BROKER_STATUS``|n/a         |``MODIFIED``|                                                 |
++----------------------+------------+------------+-------------------------------------------------+
+
+
+
 RETE Algorithm
 ==============
 

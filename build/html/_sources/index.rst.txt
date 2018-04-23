@@ -10,7 +10,11 @@ The EMSX API is just another service in Bloomberg API V3.  The Bloomberg API fol
 
 The Bloomberg API is lightweight, thread safe and maintains extensible service-oriented data model. The Bloomberg API generally understands the concept of subscription and request-response services.
 
-Please note this is not a compiled binary. This is a CODE SAMPLE. There is no SLA (Service Level Agreement) or quality assessment or guarantees.
+
+.. important::
+
+	Please note that this is not a compiled binary. This is a CODE SAMPLE. There is no SLA (Service Level Agreement) or quality assessment or guarantees.
+
 
 The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions. 
 
