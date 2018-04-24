@@ -276,173 +276,202 @@ Value</th>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">SENT</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">SENT</span></code></td>
-<td rowspan="2"><p class="first">Working amount set on route. (placement)</p>
-<p class="last">(Can be ignored)</p>
-</td>
+<td>Field update on sent.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
-<td>0</td>
-<td>&gt;0</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">SENT</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
 <td>ACK received from the broker.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
 <td rowspan="2">First fill or multiple fills. (&lt;100%)</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
 <td>n</td>
 <td>&lt;n and &gt;0</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
 <td rowspan="2">Middle fill or multiple fills. (&lt;100%)</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
 <td>n</td>
 <td>&lt;n and &gt;0</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">FILLED</span></code></td>
 <td rowspan="2">Final fill or multiple fills. (100%)</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
 <td>&gt;0</td>
 <td>0</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">FILLED</span></code></td>
 <td rowspan="2">Full single fill.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
 <td>&gt;0</td>
 <td>0</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td>null</td>
 <td><code class="docutils literal notranslate"><span class="pre">FILLED</span></code></td>
 <td>Historic 100% fill on <code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code>.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td>null</td>
 <td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
 <td>Working route (placement) on <code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code>.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td>null</td>
 <td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
 <td>Part filled route (placement) on <code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code>.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td>null</td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
 <td>Cancel requested on route in <code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code>.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
 <td>Cancel route request sent.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
 <td>Broker rejected cancel request.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLPEN</span></code></td>
 <td>Broker sent ACK for cancel request.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLPEN</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
 <td>Broker rejected cancel request.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></td>
 <td>Broker cancelled route from request.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLPEN</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></td>
 <td>Broker cancelled route from request.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
 <td>Cancel requested on part filled route.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
 <td>Broker rejected cancel request.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLPEN</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
 <td>Broker rejected cancel request.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLRPRQ</span></code></td>
 <td>Modify (cancel/replace) request sent to broker.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLRPRQ</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">REPPEN</span></code></td>
 <td>Broker sent ACK for modify request.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">REPPEN</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
 <td rowspan="2">Broker rejected modify request on working route.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
 <td>n/a</td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLRPRJ</span></code></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">REPPEN</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
 <td rowspan="2">Broker accepted and applied the modify request
 on working route. (placement)</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
 <td>n/a</td>
 <td><code class="docutils literal notranslate"><span class="pre">MODIFIED</span></code></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLRPRQ</span></code></td>
 <td>Modify (cancel/replace) request sent to broker.</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">REPPEN</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
 <td rowspan="2">Broker rejected modify request on part filled
 route. (placement)</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
 <td>n/a</td>
 <td><code class="docutils literal notranslate"><span class="pre">CXLRPRJ</span></code></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">REPPEN</span></code></td>
 <td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
 <td rowspan="2">Broker accepted and applied the modify request
 on part filled route. (placement)</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
 <td>n/a</td>
 <td><code class="docutils literal notranslate"><span class="pre">MODIFIED</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">SENT</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">REJECTED</span></code></td>
+<td>Broker rejected the order from sent status.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td>null</td>
+<td><code class="docutils literal notranslate"><span class="pre">REJECTED</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code> shows route (placement) rejected.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td>null</td>
+<td><code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code> shows route (placement) cancelled.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLRPRQ</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td>Modify rejected from request.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></td>
+<td>Part filled route cancelled by broker.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></td>
+<td>Working route cancelled by broker.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">REJECTED</span></code></td>
+<td>Route rejected from working.</td>
 </tr>
 </tbody>
 </table>

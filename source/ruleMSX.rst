@@ -139,9 +139,7 @@ The following elements are available for equity and options IOI subscription.
 +======================+============+============+=================================================+
 |``EMSX_STATUS``       |null        |``SENT``    |New route (placement) created.                   |
 +----------------------+------------+------------+-------------------------------------------------+
-|``EMSX_STATUS``       |``SENT``    |``SENT``    |Working amount set on route. (placement)         |
-+----------------------+------------+------------+                                                 | 
-|``EMSX_WORKING``      |0           | >0         |(Can be ignored)                                 |
+|``EMSX_STATUS``       |``SENT``    |``SENT``    |Field update on sent.                            |
 +----------------------+------------+------------+-------------------------------------------------+
 |``EMSX_STATUS``       |``SENT``    |``WORKING`` |ACK received from the broker.                    |
 +----------------------+------------+------------+-------------------------------------------------+
@@ -208,6 +206,20 @@ The following elements are available for equity and options IOI subscription.
 |``EMSX_STATUS``       |``REPPEN``  |``PARTFILL``|Broker accepted and applied the modify request   |
 +----------------------+------------+------------+on part filled route. (placement)                |
 |``EMSX_BROKER_STATUS``|n/a         |``MODIFIED``|                                                 |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``SENT``    |``REJECTED``|Broker rejected the order from sent status.      |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |null        |``REJECTED``|``INIT_PAINT`` shows route (placement) rejected. |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |null        |``CANCEL``  |``INIT_PAINT`` shows route (placement) cancelled.|
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``CXLRPRQ`` |``WORKING`` |Modify rejected from request.                    |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``PARTFILL``|``CANCEL``  |Part filled route cancelled by broker.           |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``WORKING`` |``CANCEL``  |Working route cancelled by broker.               |
++----------------------+------------+------------+-------------------------------------------------+
+|``EMSX_STATUS``       |``WORKING`` |``REJECTED``|Route rejected from working.                     |
 +----------------------+------------+------------+-------------------------------------------------+
 
 
