@@ -131,8 +131,6 @@ Following the ingestion process, the current ``OpenSetQueue`` becomes the ``Open
 EMSX Route Status
 =================
 
-The following elements are available for equity and options IOI subscription.
-
 +----------------------+------------+------------+-------------------------------------------------+
 |Field                 |Previous    |New Value   |Definition                                       |
 |                      |Value       |            |                                                 |     
