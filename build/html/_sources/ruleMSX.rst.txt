@@ -125,13 +125,11 @@ The second part of the dereferencing process is to iterate each ``RuleCondition`
 
 The reason for doing this is that when a ``DataPointSource``’s value changes, its ``SetStale()`` method is (should be) fired. This forces each ``WorkingRule`` dependency of the ``DataPointSource`` to be added to the ``OpenSetQueue`` in the ``WorkingSetAgent`` for execution in the next cycle, unless the ``WorkingRule`` is already in the ``OpenSetQueue``.
 
-Following the ingestion process, the current ``OpenSetQueue`` becomes the ``OpenSet``, and the``OpenSetQueue`` is then reset to empty. The ``OpenSet`` is now iterated, and each ``WorkingRule`` in the queue is processed. Each ``Evaluator`` in the ``WorkingRule`` is fired, passing it the ``WorkingRule``’s ``DataSet``. If all ``Evaluators`` in the ``WorkingRule`` return true, then the action process begins. Each action associated with the ``WorkingRule`` is executed.
+Following the ingestion process, the current ``OpenSetQueue`` becomes the ``OpenSet``, and the ``OpenSetQueue`` is then reset to empty. The ``OpenSet`` is now iterated, and each ``WorkingRule`` in the queue is processed. Each ``Evaluator`` in the ``WorkingRule`` is fired, passing it the ``WorkingRule``’s ``DataSet``. If all ``Evaluators`` in the ``WorkingRule`` return true, then the action process begins. Each action associated with the ``WorkingRule`` is executed.
 
 
 EMSX Route Status
 =================
-
-The following elements are available for equity and options IOI subscription.
 
 +----------------------+------------+------------+-------------------------------------------------+
 |Field                 |Previous    |New Value   |Definition                                       |
