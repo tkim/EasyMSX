@@ -16,6 +16,11 @@ The Bloomberg API is lightweight, thread safe and maintains extensible service-o
 	Please note that this is not a compiled binary. This is a CODE SAMPLE. There is no SLA (Service Level Agreement) or quality assessment or guarantees.
 
 
+.. warning::
+
+	Please do not reach out to Bloomberg for support or help.
+	
+
 The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions. 
 
 There are other additional code samples that can be used along with EasyMSX on this repository. They are EasyMKT and RuleMSX samples.
