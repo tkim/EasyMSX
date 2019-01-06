@@ -4,12 +4,6 @@ EasyMSX Documentation
 
 The EasyMSX code samples are various projects to demonstrate how Bloomberg EMSX API along with other Bloomberg API and industry standard algorithms can be implemented for building and implementing an efficient trading environment.
 
-The EasyMSX wrapper is a code sample that can be compiled into a library. The EasyMSX are set of files to build a project that demonstrates one possible way to build caching data or a starting place to work with Bloomberg EMSX API.
-
-The EMSX API is just another service in Bloomberg API V3.  The Bloomberg API follows an event-driven asynchronous API paradigm. 
-
-The Bloomberg API is lightweight, thread safe and maintains extensible service-oriented data model. The Bloomberg API generally understands the concept of subscription and request-response services.
-
 
 .. important::
 
@@ -21,22 +15,12 @@ The Bloomberg API is lightweight, thread safe and maintains extensible service-o
 	Please do not reach out to Bloomberg for support or help.
 	
 
-The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions. 
-
-There are other additional code samples that can be used along with EasyMSX on this repository. They are EasyMKT and RuleMSX samples.
-
-The EasyMKT and EasyMKTSample are essentially an EasyMSX for market data where the project demonstrates one possible way to build caching data on Bloomberg real-time market data.
-
-The RuleMSX is a business rule management project using Bloomberg EMSX API for trading, Bloomberg Market Data for market data and rete algorithm for efficient business rule management.
-
-
-
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents:
 
-   easyMSX
-   easyMKT
-   ruleMSX
-   resource
+   introduction
+   projects
+   resources
+   license
 

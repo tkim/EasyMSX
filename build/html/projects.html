@@ -1,0 +1,494 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Projects &mdash; EasyMSX Doc 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Resource" href="resources.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> EasyMSX Doc
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#easymsx">EasyMSX</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installing">Installing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#easymkt">EasyMKT</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Installing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rulemsx">RuleMSX</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Installing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#operation">Operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests">Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deployment">Deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#license">License</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resource</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EasyMSX Doc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Projects</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/projects.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="projects">
+<h1>Projects<a class="headerlink" href="#projects" title="Permalink to this headline">¶</a></h1>
+<p>There are currently three active projects written in C Sharp and Python. Other programming languages and projects will follow shortly.</p>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>All C# projects requires .NET 4.0 but has no other external dependencies.</li>
+<li>The python projects runs in Python 3.</li>
+</ul>
+</div>
+<div class="section" id="easymsx">
+<h2>EasyMSX<a class="headerlink" href="#easymsx" title="Permalink to this headline">¶</a></h2>
+<p>The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions.</p>
+<div class="section" id="installing">
+<h3>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>For C#, Download the source code and build the library from the source.</li>
+<li>For python, create the new directory and extract easymsx-1.0.x into the new directory. Change the directory to easymsx-1.0.x and in the directory run the following command:-</li>
+</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\Me\&gt;cd easymsx-1.0.x
+
+C:\Users\Me\easymsx-1.0.x&gt;C:\Python34\python.exe setup.py install
+</pre></div>
+</div>
+<ul class="simple">
+<li>Run easymsxdemo.py</li>
+</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\Me\&gt;cd easymeasymsx-1.0.x
+
+C:\Users\Me\easymsx-1.0.x&gt;py -3 easymsxdemo.py
+</pre></div>
+</div>
+<ul class="simple">
+<li>The GitHub link to the EasyMSX sample in <a class="reference external" href="https://github.com/tkim/EasyMSXRepository">EasyMSX</a>.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="easymkt">
+<h2>EasyMKT<a class="headerlink" href="#easymkt" title="Permalink to this headline">¶</a></h2>
+<p>The EasyMKT and EasyMKTSample are essentially an EasyMSX for market data where the project demonstrates one possible way to build caching data on Bloomberg real-time market data.</p>
+<div class="section" id="id2">
+<h3>Installing<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>For C#, Download the source code and build the library from the source.</li>
+<li>For python, create the new directory and extract easymkt-1.0.x into the new directory. Change the directory to easymkt-1.0.x and in the directory run the following command:-</li>
+</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\Me\&gt;cd easymkt-1.0.x
+
+C:\Users\Me\easymkt-1.0.x&gt;C:\Python34\python.exe setup.py install
+</pre></div>
+</div>
+<ul class="simple">
+<li>Run easymktdemo.py</li>
+</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\Me\&gt;cd easymsx-1.0.x
+
+C:\Users\Me\easymkt-1.0.x&gt;py -3 easymktdemo.py
+</pre></div>
+</div>
+<ul class="simple">
+<li>The GitHub link to the EasyMKT sample in <a class="reference external" href="https://github.com/tkim/EasyMSXRepository">EasyMSX</a>.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="rulemsx">
+<h2>RuleMSX<a class="headerlink" href="#rulemsx" title="Permalink to this headline">¶</a></h2>
+<p>Rather than making use of domain specific language (DSL) to define the rules, it exposes a series of abstract classes. It facilitates the creation of complex if-this-then-that behavior.</p>
+<div class="section" id="id4">
+<h3>Installing<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>For C#, Download the source code and build the library from the source.</li>
+<li>For python, create the new directory and extract easymsx-1.0.0 and rulemsx-1.0.0 into the new directory.</li>
+</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;dir
+Volume in drive C is Windows
+Volume Serial Number is ABCD-1234
+
+Directory of C:\Users\Me\_rulemsx
+
+12/21/2017  09:08 AM    &lt;DIR&gt;          .
+12/21/2017  09:08 AM    &lt;DIR&gt;          ..
+12/21/2017  09:01 AM    &lt;DIR&gt;          easymsx-1.0.0
+12/21/2017  09:01 AM    &lt;DIR&gt;          rulemsx-1.0.0
+12/21/2017  09:01 AM    &lt;DIR&gt;          RuleMSXDemo.py
+               1 File(s)              0 bytes
+               4 Dir(s)  11,538,878,464 bytes free
+</pre></div>
+</div>
+<ul class="simple">
+<li>Change the directory to rulemsx-1.0.0 and in the directory run the following command:-</li>
+</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;cd rulemsx-1.0.0
+
+C:\Users\Me\_rulemsx\rulemsx-1.0.0&gt;C:\Python34\python.exe setup.py install
+</pre></div>
+</div>
+<ul class="simple">
+<li>Please make sure the path for python is set to where you currently have your python 3 installed. Change directory to easymsx-1.0.0 and in the diretory run the following command:-</li>
+</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;cd easymsx-1.0.0
+
+C:\Users\Me\_rulemsx\easymsx-1.0.0&gt;C:\Python34\python.exe setup.py install
+</pre></div>
+</div>
+<ul class="simple">
+<li>Run RuleMSXDemo.py</li>
+</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\Me\_rulemsx&gt;py -3 RuleMSXDemo.py
+Initialising RuleMSX...
+RuleMSX initialised...
+Initialising EasyMSX...
+EasyMSX initialised...
+Create RuleSet...
+Building Rules...
+Rules built.
+RuleSet ready...
+Press any to terminate
+</pre></div>
+</div>
+</div>
+<div class="section" id="getting-started">
+<h3>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
+<p>The following is the C# implementation of the RuleMSX sample. RuleMSX provides the core functionality of a rule engine. Once the library has been <a class="reference external" href="https://easymsx.readthedocs.io/en/latest/resource.html#referenced">referenced</a> in your project, create an instance of RuleMSX:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">RuleMSX</span> <span class="n">rmsx</span> <span class="p">=</span> <span class="k">new</span> <span class="n">RuleMSX</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>RuleMSX is divided into Rules, DataPoints and Actions. Rules are organized into RuleSets:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">RuleSet</span> <span class="n">myRuleSet</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">rmsx</span><span class="p">.</span><span class="n">CreateRuleSet</span><span class="p">(</span><span class="s">&quot;MyRuleSet&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>A RuleSet contains one or more Rules, and each Rule is made up of one or more RuleConditions. Each RuleCondition has a RuleEvaluator which is the code written by the developer. Each rule also has one or more RuleAction associated with it. When all the RuleConditions are met, the RuleAction is excuted.</p>
+<p>To create a Rule:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">Rule</span> <span class="n">myNewRule</span> <span class="p">=</span> <span class="n">myRuleSet</span><span class="p">.</span><span class="n">AddRule</span><span class="p">(</span><span class="s">&quot;NewRule&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>To create a RuleCondition:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">RuleCondition</span> <span class="n">myRuleCondition</span> <span class="p">=</span> <span class="k">new</span> <span class="n">RuleCondition</span><span class="p">(</span><span class="s">&quot;MyConditoin&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">MyCondtionCode</span><span class="p">());</span>
+</pre></div>
+</div>
+<p>The ‘MyConditionCode’ class extends the RuleEvaluator abstract class, guarenteeing the presence of an Evalute() method. This method must return a boolean value.</p>
+<p>For example:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyConditionCode</span> <span class="p">:</span> <span class="n">RuleEvaluator</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="nf">MyConditionCode</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// constructor code</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">override</span> <span class="kt">bool</span> <span class="nf">Evalute</span><span class="p">(</span><span class="n">DataSet</span> <span class="n">dataSet</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(&lt;</span><span class="n">sometest</span><span class="p">&gt;)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">True</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">False</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Add the RuleCondition to the Rule:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">myNewRule</span><span class="p">.</span><span class="n">AddRuleCondtion</span><span class="p">(</span><span class="n">myRuleCondition</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Alternatively:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">myRuleCondition</span><span class="p">.</span><span class="n">AddRuleConditino</span><span class="p">(</span><span class="k">new</span> <span class="n">RuleCondition</span><span class="p">(</span><span class="s">&quot;MyCondition&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">MyConditionCode</span><span class="p">()));</span>
+</pre></div>
+</div>
+<p>When the RuleEvaluator of each of the RuleConditions Associated with a Rule return True, then any Actions associated with the Rule will be fired.</p>
+<p>Actions are created independently of a Rule, so that a single action can be reused across multipel Rules, An action consists of a Rule object, and an associated RuleEvaluator which is extended by the developer.</p>
+<p>To create an Action:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">Action</span> <span class="n">myAction</span> <span class="p">=</span> <span class="n">rmsx</span><span class="p">.</span><span class="n">CreateAction</span><span class="p">(</span><span class="s">&quot;MyAction&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">MyActionCode</span><span class="p">());</span>
+</pre></div>
+</div>
+<p>The ‘MyActionCode’ class extends the ActionExecutor abstract class, guarenteeing the presence of an Execute() method.</p>
+<p>For example:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyActionCode</span><span class="p">:</span> <span class="n">ActionExecutor</span>
+<span class="p">{</span>
+
+    <span class="k">public</span> <span class="nf">MyActionCode</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// constructor code</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">Execute</span><span class="p">(</span><span class="n">DataSet</span><span class="p">,</span> <span class="n">dataset</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// do something here</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Add the Action to the Rule:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">myNewRule</span><span class="p">.</span><span class="n">AddAction</span><span class="p">(</span><span class="n">myAction</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Alternatively:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">myNewRule</span><span class="p">.</span><span class="n">AddAction</span><span class="p">(</span><span class="n">rmsx</span><span class="p">.</span><span class="n">CreateAction</span><span class="p">(</span><span class="s">&quot;MyAction&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">MyActionCode</span><span class="p">()));</span>
+</pre></div>
+</div>
+<p>The data to be processed is a RuleSet is defined as DataPoints, which are organized into DataSets.</p>
+<p>A DataPoint is a single named item of data that has an assocated DataPointSource. The DataPointSource is an abstract class that the developer extends, which guarentees teh presense of a GetValue() method. Think of the DataSet as an object with properties. Think of the DataSet as a collection of DataPoints, each of which is a key-value pair.</p>
+<p>You submit a DataSet for execution by a RuleSet’s execution agent, as follows:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">myRuleSet</span><span class="p">.</span><span class="n">execute</span><span class="p">(</span><span class="n">myDataSet</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>To create a DataSet:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">DataSet</span> <span class="n">myDataSet</span> <span class="p">=</span> <span class="n">rmsx</span><span class="p">.</span><span class="n">CreateDataSet</span><span class="p">(</span><span class="s">&quot;&lt;some unique name&gt;&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>To create a DataPoint, you first need to create a DataPointSource. This is done by creating a class that extends DataPointSource:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">private</span> <span class="k">class</span> <span class="nc">ConstantDataPointSource</span> <span class="p">:</span> <span class="n">DataPointSource</span>
+<span class="p">{</span>
+    <span class="kt">string</span> <span class="n">retValue</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="nf">TestDataPointSource</span><span class="p">(</span><span class="kt">string</span> <span class="n">retValule</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="n">retValue</span> <span class="p">=</span> <span class="n">retValue</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">public</span> <span class="k">override</span> <span class="kt">object</span> <span class="nf">GetValue</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">retValue</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>An instance of thi sclass will return the value that was passesd to the constructor whenever the GetValue() method is called.</p>
+<p>Create the DataPoint as follows:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">DataPoint</span> <span class="n">myDataPoint</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ConstantDataPointSource</span><span class="p">(</span><span class="s">&quot;Return this!&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Add the DataPoint to the DataSet:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">myDataSet</span><span class="p">.</span><span class="n">AddDataPoint</span><span class="p">(</span><span class="s">&quot;DataPoint1&quot;</span><span class="p">,</span> <span class="n">myDataPoint</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Alternatively:-</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="n">myDataSet</span><span class="p">.</span><span class="n">AddDataPoint</span><span class="p">(</span><span class="s">&quot;DataPoint1&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">ConstantDataPointSource</span><span class="p">(</span><span class="s">&quot;Return this!&quot;</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operation">
+<h3>Operation<a class="headerlink" href="#operation" title="Permalink to this headline">¶</a></h3>
+<p>The execution agent that underlies a RuleSet operates in its own thread. When a RuleSets Execute() method is first invoked, the execution agent is created. Thereafter, any further calls to Execute() will result in the DataSet simply being passed to the already running agent.</p>
+<p>When a DataSet is ingested by the execution agent, all the Rules will be tested. Once a rule is tested, it will not be tested again, unless it is re-introduced. This happesn when a RuleCondition whin the rule has a delcared dependency on a DataPoint whos DataPointSource has been marked as stale. This is done on the client side, by calling SetStale() on a DataPointSource object. Any Rule that has a dependency on that DataPoint will be re-introduced into the queue of Rules to be tested.</p>
+<p>This means that RuleCondition can be created that depends on  the value of a variable or field that will change over time. When the rule is fist tested, perhpas the value is in a state that means that the Evaluate() method will return False. However, it may change later. The rule will not be tested again under normal circumstances. But if the variable or field changes values, simply call the SetStale() method on the DataPointSource object, and any and all Rules which have a RuleCondition that depends on its value will be re-tested. This means that the RuleCondition may now return True, and the associated ActionExecutor of Rule will be fired.</p>
+</div>
+<div class="section" id="tests">
+<h3>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h3>
+<p>NUnit unit tests, as well as integration tests, are included in the project.</p>
+</div>
+<div class="section" id="deployment">
+<h3>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h3>
+<p>Simply distribute the library with any application distribution.</p>
+</div>
+<div class="section" id="license">
+<h3>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h3>
+<p>This project is under the MIT License - see the License file for details.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="resources.html" class="btn btn-neutral float-right" title="Resource" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="introduction.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Terrence C. Kim
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

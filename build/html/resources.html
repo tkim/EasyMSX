@@ -1,0 +1,600 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Resource &mdash; EasyMSX Doc 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="License" href="license.html" />
+    <link rel="prev" title="Projects" href="projects.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> EasyMSX Doc
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Projects</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Resource</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#emsx-route-status">EMSX Route Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rulemsx">RuleMSX</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rete-algorithm">RETE Algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#earlier-version">Earlier Version</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rulesets">RuleSets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rules">Rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ruleconditions">RuleConditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ruleevaluator">RuleEvaluator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ruleactions">RuleActions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#actionexecutors">ActionExecutors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datasets">DataSets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datapoints">DataPoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datapointsource">DataPointSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-executionagent-process">The ExecutionAgent process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#full-easymsx-code-samples">Full EasyMSX Code Samples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#full-emsx-api-documentation">Full EMSX API Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#full-emsx-api-code-samples">Full EMSX API Code Samples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#full-bloomberg-api-developer-guide">Full Bloomberg API Developer Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reference">reference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EasyMSX Doc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Resource</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/resources.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="resource">
+<h1>Resource<a class="headerlink" href="#resource" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="emsx-route-status">
+<h2>EMSX Route Status<a class="headerlink" href="#emsx-route-status" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="13%" />
+<col width="13%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Previous
+Value</th>
+<th class="head">New Value</th>
+<th class="head">Definition</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td>null</td>
+<td><code class="docutils literal notranslate"><span class="pre">SENT</span></code></td>
+<td>New route (placement) created.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">SENT</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">SENT</span></code></td>
+<td>Field update on sent.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">SENT</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td>ACK received from the broker.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td rowspan="2">First fill or multiple fills. (&lt;100%)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
+<td>n</td>
+<td>&lt;n and &gt;0</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td rowspan="2">Middle fill or multiple fills. (&lt;100%)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
+<td>n</td>
+<td>&lt;n and &gt;0</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">FILLED</span></code></td>
+<td rowspan="2">Final fill or multiple fills. (100%)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
+<td>&gt;0</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">FILLED</span></code></td>
+<td rowspan="2">Full single fill.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_WORKING</span></code></td>
+<td>&gt;0</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td>null</td>
+<td><code class="docutils literal notranslate"><span class="pre">FILLED</span></code></td>
+<td>Historic 100% fill on <code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code>.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td>null</td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td>Working route (placement) on <code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code>.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td>null</td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td>Part filled route (placement) on <code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code>.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td>null</td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
+<td>Cancel requested on route in <code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code>.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
+<td>Cancel route request sent.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td>Broker rejected cancel request.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLPEN</span></code></td>
+<td>Broker sent ACK for cancel request.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLPEN</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td>Broker rejected cancel request.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></td>
+<td>Broker cancelled route from request.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLPEN</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></td>
+<td>Broker cancelled route from request.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
+<td>Cancel requested on part filled route.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLREQ</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td>Broker rejected cancel request.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLPEN</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td>Broker rejected cancel request.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLRPRQ</span></code></td>
+<td>Modify (cancel/replace) request sent to broker.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLRPRQ</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">REPPEN</span></code></td>
+<td>Broker sent ACK for modify request.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">REPPEN</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td rowspan="2">Broker rejected modify request on working route.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
+<td>n/a</td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLRPRJ</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">REPPEN</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td rowspan="2">Broker accepted and applied the modify request
+on working route. (placement)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
+<td>n/a</td>
+<td><code class="docutils literal notranslate"><span class="pre">MODIFIED</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLRPRQ</span></code></td>
+<td>Modify (cancel/replace) request sent to broker.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">REPPEN</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td rowspan="2">Broker rejected modify request on part filled
+route. (placement)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
+<td>n/a</td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLRPRJ</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">REPPEN</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td rowspan="2">Broker accepted and applied the modify request
+on part filled route. (placement)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_BROKER_STATUS</span></code></td>
+<td>n/a</td>
+<td><code class="docutils literal notranslate"><span class="pre">MODIFIED</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">SENT</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">REJECTED</span></code></td>
+<td>Broker rejected the order from sent status.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td>null</td>
+<td><code class="docutils literal notranslate"><span class="pre">REJECTED</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code> shows route (placement) rejected.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td>null</td>
+<td><code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">INIT_PAINT</span></code> shows route (placement) cancelled.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CXLRPRQ</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td>Modify rejected from request.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">PARTFILL</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></td>
+<td>Part filled route cancelled by broker.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></td>
+<td>Working route cancelled by broker.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">WORKING</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">REJECTED</span></code></td>
+<td>Route rejected from working.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rulemsx">
+<h2>RuleMSX<a class="headerlink" href="#rulemsx" title="Permalink to this headline">¶</a></h2>
+<p>The RuleMSX is a business rule management project using Bloomberg EMSX API for trading, Bloomberg Market Data for market data and rete algorithm for efficient business rule management.</p>
+<p>RuleMSX provides the core functionality of a rule engine. It is designed to inter-operate with the <code class="docutils literal notranslate"><span class="pre">EasyMSX</span></code> and <code class="docutils literal notranslate"><span class="pre">EasyMKT</span></code> which use the Bloomberg API to access Bloomberg EMSX and market data. The RuleMSX is designed to use the rete algorithm to create an efficient business rule management system to work with Bloomberg EMSX API for automated trade execution for equities, futures, and options.</p>
+<p>This functionality is provided in the shape of <code class="docutils literal notranslate"><span class="pre">RuleSets</span></code>, <code class="docutils literal notranslate"><span class="pre">DataSets</span></code> and <code class="docutils literal notranslate"><span class="pre">Actions</span></code>. By defining Rules and the conditions that must exist for these Rules to be triggered, the user can build complex reasoning based on the content of a DataSet, and how that DataSet changes over time. The Actions are the tasks performed as a result of a Rule being triggered.</p>
+<div class="section" id="rete-algorithm">
+<h3>RETE Algorithm<a class="headerlink" href="#rete-algorithm" title="Permalink to this headline">¶</a></h3>
+<p>The word rete is Latin for net or network.
+The rete algorithm is essentially a pattern matching algorithm.</p>
+<p>The main objective behind rete algorithm for RuleMSX is to decouple the various trading or business rules from rule execution or executing sequences on a particular data set.</p>
+<p>The data set here can be both trading data obtained from EMSX API, market data, or non-trading based proprietary data set.</p>
+<p>The RuleMSX views each rule exists as a stand-alone rule that is either true or false at any given moment.</p>
+<p>A pattern contains one or more rules. All the rules in a pattern must evaluate to true for the action attached to the pattern to be executed. In this case, the action itself is responsible for introducing the new rules to be checked and/or new patterns or patterns to be removed from the set.</p>
+</div>
+</div>
+<div class="section" id="earlier-version">
+<h2>Earlier Version<a class="headerlink" href="#earlier-version" title="Permalink to this headline">¶</a></h2>
+<p>The initial approach to RuleMSX handled the rete in the following structure where each RuleSet consists of a single rule. Each rule consisted of child rules and rule evaluator.</p>
+<img alt="_images/rete_orig.png" src="_images/rete_orig.png" />
+<p>As part of the reiteration of RuleMSX, we have made the changes to reflect the rete algorithm in the following structure:</p>
+<img alt="_images/rete_new.png" src="_images/rete_new.png" />
+<div class="section" id="rulesets">
+<h3>RuleSets<a class="headerlink" href="#rulesets" title="Permalink to this headline">¶</a></h3>
+<p>RuleSets are named entities that represent a collection of RuleSet objects. This is only used to organize rules into logical groupings. A RuleSet is a named collection of Rules.</p>
+<p>An example of a RuleSet would be to route new orders to a particular broker code, based on certain criteria, such as the exchange. We will call this the “AutoRoute” ruleset.</p>
+<p>Once we have a RuleSet and a DataSet object, we can execute the RuleSet. RuleSets need one or more supporting DataSets to operate against.</p>
+</div>
+<div class="section" id="rules">
+<h3>Rules<a class="headerlink" href="#rules" title="Permalink to this headline">¶</a></h3>
+<p>Each Rule in a RuleSet is a named collection of RuleConditions and RuleActions. When all conditions in a Rule evaluate to True, the associated actions are executed.</p>
+<p>Following the above example, and single rule within the AutoRoute ruleset would be <code class="docutils literal notranslate"><span class="pre">RouteUStoBB</span></code>, which would route any orders on the <code class="docutils literal notranslate"><span class="pre">US</span></code> exchange code to the broker known as <code class="docutils literal notranslate"><span class="pre">BB</span></code>. The other rule example could be <code class="docutils literal notranslate"><span class="pre">RouteLNtoBMTB</span></code>.</p>
+</div>
+<div class="section" id="ruleconditions">
+<h3>RuleConditions<a class="headerlink" href="#ruleconditions" title="Permalink to this headline">¶</a></h3>
+<p>A <code class="docutils literal notranslate"><span class="pre">RuleCondition</span></code> is a named item within a Rule, which evaluates to either True or False. It does this through client-side code using a <code class="docutils literal notranslate"><span class="pre">RuleEvaluator</span></code>. A single Rule can have multiple <code class="docutils literal notranslate"><span class="pre">RuleConditions</span></code>, and they must all evaluate to True for the associated <code class="docutils literal notranslate"><span class="pre">RuleActions</span></code> to be executed.</p>
+<p>For our <code class="docutils literal notranslate"><span class="pre">RouteUStoBB</span></code> example, we would have a condition called <code class="docutils literal notranslate"><span class="pre">MustBeUSExchange</span></code> that checked the order to ensure that it was for the <code class="docutils literal notranslate"><span class="pre">US</span></code> exchange. Another condition would be that the order must be in a <code class="docutils literal notranslate"><span class="pre">NEW</span></code> state, perhaps called <code class="docutils literal notranslate"><span class="pre">CheckNEWState</span></code>, to ensure that this rule is only triggered once.</p>
+</div>
+<div class="section" id="ruleevaluator">
+<h3>RuleEvaluator<a class="headerlink" href="#ruleevaluator" title="Permalink to this headline">¶</a></h3>
+<p>A <code class="docutils literal notranslate"><span class="pre">RuleEvaluator</span></code> is an abstract class that must be implemented in the client-side code. This abstract class has an <code class="docutils literal notranslate"><span class="pre">Evaluate</span></code> method that must be overridden. This method must return <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>. When the Evaluate method is called, it is passed the current DataSet as a
+parameter, to support the determination of the return value.</p>
+<p>The abstract class also provides a mechanism for creating a dependency between a Rule and named DataPoints. To do this, we call the <code class="docutils literal notranslate"><span class="pre">AddDependantDataPointName</span></code> method of the class, as follows :-</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>this.AddDependantDataPointName(&quot;OrderStatus&quot;)
+</pre></div>
+</div>
+<p>In this case, we are saying that this particular Rule uses the value of the <code class="docutils literal notranslate"><span class="pre">OrderStatus</span></code> <code class="docutils literal notranslate"><span class="pre">DataPoint</span></code>. The purpose of using this mechanism is to ensure that if the value of <code class="docutils literal notranslate"><span class="pre">OrderStatus</span></code> in any <code class="docutils literal notranslate"><span class="pre">DataSet</span></code> changes, any <code class="docutils literal notranslate"><span class="pre">WorkingRules</span></code> add queue to be re-tested in the next cycle. The change to the value of a <code class="docutils literal notranslate"><span class="pre">DataPoint</span></code> is indicated by calling the <code class="docutils literal notranslate"><span class="pre">SetStale</span></code> method (see <code class="docutils literal notranslate"><span class="pre">DataPointSource</span></code>).</p>
+</div>
+<div class="section" id="ruleactions">
+<h3>RuleActions<a class="headerlink" href="#ruleactions" title="Permalink to this headline">¶</a></h3>
+<p>A Rule can have many <code class="docutils literal notranslate"><span class="pre">RuleActions</span></code>. Each <code class="docutils literal notranslate"><span class="pre">RuleAction</span></code> has a client-side component called an``ActionExecutor``. When a Rule evaluates to True, all associated <code class="docutils literal notranslate"><span class="pre">RuleActions</span></code> are executed.</p>
+<p>For example, we would have a <code class="docutils literal notranslate"><span class="pre">RuleAction</span></code> called <code class="docutils literal notranslate"><span class="pre">RouteOrdertoBB</span></code>. which would be called as a consequence of the <code class="docutils literal notranslate"><span class="pre">RouteUStoBB</span></code> rules all evaluating to True.</p>
+</div>
+<div class="section" id="actionexecutors">
+<h3>ActionExecutors<a class="headerlink" href="#actionexecutors" title="Permalink to this headline">¶</a></h3>
+<p>An <code class="docutils literal notranslate"><span class="pre">ActionExecutor</span></code> is the client-side code that is run when an Action is executed. It is an abstract class that contains an Execute method that must be overridden.</p>
+<p>When the <code class="docutils literal notranslate"><span class="pre">RouteOrdertoBB</span></code> action is executed, the Execute method of the instance of the abstract class would be called. This is the code that would create and send the route to the broker. Just as with the <code class="docutils literal notranslate"><span class="pre">RuleCondition</span></code> evaluators, the executors are passed the current dataset as a parameter when they are called.</p>
+</div>
+<div class="section" id="datasets">
+<h3>DataSets<a class="headerlink" href="#datasets" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">DataSets</span></code> are named entities that represent a collection of <code class="docutils literal notranslate"><span class="pre">DataPoint</span></code> objects. They are only used to organize <code class="docutils literal notranslate"><span class="pre">DataPoints</span></code> into logical groupings.</p>
+<p>In our current example, we would create a <code class="docutils literal notranslate"><span class="pre">DataSet</span></code> object for each order. Once the <code class="docutils literal notranslate"><span class="pre">DataSet</span></code> object is defined, we can add it to the list of <code class="docutils literal notranslate"><span class="pre">DataSets</span></code> being run through a <code class="docutils literal notranslate"><span class="pre">RuleSet</span></code> by the <code class="docutils literal notranslate"><span class="pre">ExecutionAgent</span></code>.</p>
+</div>
+<div class="section" id="datapoints">
+<h3>DataPoints<a class="headerlink" href="#datapoints" title="Permalink to this headline">¶</a></h3>
+<p>A <code class="docutils literal notranslate"><span class="pre">DataPoint</span></code> is an object that represents a single piece of data. Fundamentally, it is a simple key-value pair. A <code class="docutils literal notranslate"><span class="pre">DataPoint</span></code> doesn’t have value itself, but rather has an underlying <code class="docutils literal notranslate"><span class="pre">DataPointSource</span></code> which is used to provide the value.</p>
+<p>Examples of DataPoints would be OrderNumber, OrderStatus, OrderExchange, etc.</p>
+</div>
+<div class="section" id="datapointsource">
+<h3>DataPointSource<a class="headerlink" href="#datapointsource" title="Permalink to this headline">¶</a></h3>
+<p>A <code class="docutils literal notranslate"><span class="pre">DataPointSource</span></code> is a client-side code that provides a value for a named <code class="docutils literal notranslate"><span class="pre">DataPoint</span></code>. It is an abstract class with a <code class="docutils literal notranslate"><span class="pre">GetValue</span></code> method that must be overridden. It also provides a <code class="docutils literal notranslate"><span class="pre">SetStale</span></code> method that is used to indicate to the <code class="docutils literal notranslate"><span class="pre">ExecutionAgent</span></code> that the value must be re-examined. This will cause any <code class="docutils literal notranslate"><span class="pre">WorkingRules</span></code> for Rule that has a dependency on this <code class="docutils literal notranslate"><span class="pre">DataPoint</span></code> to be the queue for re-evaluation on the next cycle.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">DataPointSources</span></code> for the above example <code class="docutils literal notranslate"><span class="pre">DataPoints</span></code> would access the <code class="docutils literal notranslate"><span class="pre">EMSX</span></code> data to return the correct <code class="docutils literal notranslate"><span class="pre">EMSX_SEQUENCE</span></code> and <code class="docutils literal notranslate"><span class="pre">EMSX_STATUS</span></code>, and perhaps use the reference data service to get the exchange code for the ticker on the order.</p>
+</div>
+<div class="section" id="the-executionagent-process">
+<h3>The ExecutionAgent process<a class="headerlink" href="#the-executionagent-process" title="Permalink to this headline">¶</a></h3>
+<p>When the application has completed the configuration of all the main elements (<code class="docutils literal notranslate"><span class="pre">Rules</span></code>, <code class="docutils literal notranslate"><span class="pre">RuleConditions</span></code>, <code class="docutils literal notranslate"><span class="pre">Evaluators</span></code>, <code class="docutils literal notranslate"><span class="pre">Action</span></code>,
+<code class="docutils literal notranslate"><span class="pre">Executors</span></code>, and etc.), one or more <code class="docutils literal notranslate"><span class="pre">RuleSets</span></code> can be executed.</p>
+<p>This involves taking a <code class="docutils literal notranslate"><span class="pre">DataSet</span></code> and asking the <code class="docutils literal notranslate"><span class="pre">RuleSet</span></code> to be executed against that DataSet: -</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>myRuleSet.Execute(dataSet_1);
+</pre></div>
+</div>
+<p>If this is the first time this <code class="docutils literal notranslate"><span class="pre">RuleSet</span></code> has been executed, a new <code class="docutils literal notranslate"><span class="pre">ExecutionAgent</span></code> will be created for the <code class="docutils literal notranslate"><span class="pre">RuleSet</span></code>. If the <code class="docutils literal notranslate"><span class="pre">RuleSet</span></code> already has an <code class="docutils literal notranslate"><span class="pre">ExecutionAgent</span></code>, it will be reused. The specified <code class="docutils literal notranslate"><span class="pre">DataSet</span></code> is then passed to the <code class="docutils literal notranslate"><span class="pre">RuleSet</span></code>’s <code class="docutils literal notranslate"><span class="pre">ExecutionAgent</span></code>: -</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>executionAgent = new ExecutionAgent(myRuleSet, dataSet_1);
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>executionAgent.AddDataSet(dataSet_1);
+</pre></div>
+</div>
+<p>Each <code class="docutils literal notranslate"><span class="pre">ExecutionAgent</span></code> has a <code class="docutils literal notranslate"><span class="pre">DataSetQueue</span></code>. Adding a <code class="docutils literal notranslate"><span class="pre">DataSet</span></code> to an <code class="docutils literal notranslate"><span class="pre">ExecutionAgent</span></code> simply adds the <code class="docutils literal notranslate"><span class="pre">DataSet</span></code> reference into the <code class="docutils literal notranslate"><span class="pre">DataSetQueue</span></code>. This is used to ensure that new <code class="docutils literal notranslate"><span class="pre">DataSets</span></code> are only ingested at the correct time, and not at the mid-point of a cycle.</p>
+<p>A new <code class="docutils literal notranslate"><span class="pre">ExecutionAgent</span></code> will create a new internal thread that will operate a <code class="docutils literal notranslate"><span class="pre">WorkingSetAgent</span></code>. This <code class="docutils literal notranslate"><span class="pre">WorkingSetAgent</span></code> is the main loop that controls the execution of the rules and actions for a <code class="docutils literal notranslate"><span class="pre">RuleSet</span></code>, and it continues to run until stopped by an external request (a call to the <code class="docutils literal notranslate"><span class="pre">stop()</span></code> method).</p>
+<p>Each cycle of the <code class="docutils literal notranslate"><span class="pre">WorkingSetAgent</span></code> begins with ingesting any <code class="docutils literal notranslate"><span class="pre">DataSets</span></code> in the <code class="docutils literal notranslate"><span class="pre">ExecutionAgent</span></code>’s <code class="docutils literal notranslate"><span class="pre">DataSetQueue</span></code>. This is the process of creating a <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code> for each Rule in the <code class="docutils literal notranslate"><span class="pre">RuleSet</span></code> and the specified <code class="docutils literal notranslate"><span class="pre">DataSet</span></code>.</p>
+<p>To create a <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code>, a Rule and a <code class="docutils literal notranslate"><span class="pre">DataSet</span></code> are required. A process known as dereferencing takes place, which has two steps. The first step is to take each Action associated with the Rule and add the <code class="docutils literal notranslate"><span class="pre">ActionExecutor</span></code> references to the <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code>’s Executors collection.</p>
+<p>The second part of the dereferencing process is to iterate each <code class="docutils literal notranslate"><span class="pre">RuleCondition</span></code> of the Rule, and add it’s <code class="docutils literal notranslate"><span class="pre">RuleEvaluator</span></code> to the <code class="docutils literal notranslate"><span class="pre">Evaluators</span></code> collection of the <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code>. Each <code class="docutils literal notranslate"><span class="pre">RuleEvaluator</span></code> has a collection of <code class="docutils literal notranslate"><span class="pre">DataPoint</span></code> names that it depends on. For each of these dependant data point names, we find the actual <code class="docutils literal notranslate"><span class="pre">DataPoint</span></code> in the <code class="docutils literal notranslate"><span class="pre">DataSet</span></code> that matches the name. The <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code> is then added to the <code class="docutils literal notranslate"><span class="pre">AssociatedWorkingRules</span></code> collection of the <code class="docutils literal notranslate"><span class="pre">DataPoint</span></code>’s <code class="docutils literal notranslate"><span class="pre">DataPointSource</span></code> object.</p>
+<p>The reason for doing this is that when a <code class="docutils literal notranslate"><span class="pre">DataPointSource</span></code>’s value changes, its <code class="docutils literal notranslate"><span class="pre">SetStale()</span></code> method is (should be) fired. This forces each <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code> dependency of the <code class="docutils literal notranslate"><span class="pre">DataPointSource</span></code> to be added to the <code class="docutils literal notranslate"><span class="pre">OpenSetQueue</span></code> in the <code class="docutils literal notranslate"><span class="pre">WorkingSetAgent</span></code> for execution in the next cycle, unless the <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code> is already in the <code class="docutils literal notranslate"><span class="pre">OpenSetQueue</span></code>.</p>
+<p>Following the ingestion process, the current <code class="docutils literal notranslate"><span class="pre">OpenSetQueue</span></code> becomes the <code class="docutils literal notranslate"><span class="pre">OpenSet</span></code>, and the <code class="docutils literal notranslate"><span class="pre">OpenSetQueue</span></code> is then reset to empty. The <code class="docutils literal notranslate"><span class="pre">OpenSet</span></code> is now iterated, and each <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code> in the queue is processed. Each <code class="docutils literal notranslate"><span class="pre">Evaluator</span></code> in the <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code> is fired, passing it the <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code>’s <code class="docutils literal notranslate"><span class="pre">DataSet</span></code>. If all <code class="docutils literal notranslate"><span class="pre">Evaluators</span></code> in the <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code> return true, then the action process begins. Each action associated with the <code class="docutils literal notranslate"><span class="pre">WorkingRule</span></code> is executed.</p>
+</div>
+<div class="section" id="full-easymsx-code-samples">
+<h3>Full EasyMSX Code Samples<a class="headerlink" href="#full-easymsx-code-samples" title="Permalink to this headline">¶</a></h3>
+<p>The link to the main <a class="reference external" href="https://github.com/tkim/EasyMSXRepository">EasyMSX Code Sample</a>.</p>
+</div>
+<div class="section" id="full-emsx-api-documentation">
+<h3>Full EMSX API Documentation<a class="headerlink" href="#full-emsx-api-documentation" title="Permalink to this headline">¶</a></h3>
+<p>The link to the main <a class="reference external" href="http://emsx-api-doc.readthedocs.io/en/latest/">EMSX API Documentation</a>.</p>
+</div>
+<div class="section" id="full-emsx-api-code-samples">
+<h3>Full EMSX API Code Samples<a class="headerlink" href="#full-emsx-api-code-samples" title="Permalink to this headline">¶</a></h3>
+<p>The github link to the <a class="reference external" href="https://github.com/tkim/emsx_api_repository">EMSX API Code Sample</a>.</p>
+</div>
+<div class="section" id="full-bloomberg-api-developer-guide">
+<h3>Full Bloomberg API Developer Guide<a class="headerlink" href="#full-bloomberg-api-developer-guide" title="Permalink to this headline">¶</a></h3>
+<p>The link to the <a class="reference external" href="https://data.bloomberglp.com/professional/sites/10/2017/03/BLPAPI-Core-Developer-Guide.pdf">Open API Core Developer Guide</a>.</p>
+<p>The link to the <a class="reference external" href="https://github.com/tkim/EasyMSXRepository/tree/master/Python">python RuleMSX</a>.</p>
+</div>
+<div class="section" id="reference">
+<h3>reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Bloomberg API SDK in CSharp (e.g. c:blpDAPIAPIv3DotnetAPIv3.8.9.2libBloomberglp.Blpapi.dll)</td>
+</tr>
+<tr class="row-even"><td>EasyMKT.dll (e.g. c:… cs_EasyMKT-masterEasyMKTbinDebugEasyMKT.dll)</td>
+</tr>
+<tr class="row-odd"><td>EasyMSX.dll (e.g. c:… cs_EasyMSX-masterEasyMSXbinDebugEasyMSX.dll)</td>
+</tr>
+<tr class="row-even"><td>RuleMSX.dll (e.g. c:… cs_RuleMSX-masterRuleMSXbinDebugRuleMSX.dll)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="license.html" class="btn btn-neutral float-right" title="License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="projects.html" class="btn btn-neutral" title="Projects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Terrence C. Kim
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

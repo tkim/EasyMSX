@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>EasyMSX Documentation &mdash; EasyMSXDoc 1.1.0 documentation</title>
+  <title>EasyMSX Documentation &mdash; EasyMSX Doc 2.0 documentation</title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="EasyMSX" href="easyMSX.html" /> 
+    <link rel="next" title="Introduction" href="introduction.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -47,7 +47,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> EasyMSXDoc
+            <a href="#" class="icon icon-home"> EasyMSX Doc
           
 
           
@@ -57,7 +57,7 @@
             
             
               <div class="version">
-                1.1
+                2.0
               </div>
             
           
@@ -83,10 +83,10 @@
             
               <p class="caption"><span class="caption-text">Table of Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="easyMSX.html">EasyMSX</a></li>
-<li class="toctree-l1"><a class="reference internal" href="easyMKT.html">EasyMKT</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ruleMSX.html">RuleMSX</a></li>
-<li class="toctree-l1"><a class="reference internal" href="resource.html">Resource</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resource</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 
             
@@ -101,7 +101,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">EasyMSXDoc</a>
+          <a href="#">EasyMSX Doc</a>
         
       </nav>
 
@@ -154,9 +154,6 @@
   <div class="section" id="easymsx-documentation">
 <h1>EasyMSX Documentation<a class="headerlink" href="#easymsx-documentation" title="Permalink to this headline">¶</a></h1>
 <p>The EasyMSX code samples are various projects to demonstrate how Bloomberg EMSX API along with other Bloomberg API and industry standard algorithms can be implemented for building and implementing an efficient trading environment.</p>
-<p>The EasyMSX wrapper is a code sample that can be compiled into a library. The EasyMSX are set of files to build a project that demonstrates one possible way to build caching data or a starting place to work with Bloomberg EMSX API.</p>
-<p>The EMSX API is just another service in Bloomberg API V3.  The Bloomberg API follows an event-driven asynchronous API paradigm.</p>
-<p>The Bloomberg API is lightweight, thread safe and maintains extensible service-oriented data model. The Bloomberg API generally understands the concept of subscription and request-response services.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p class="last">Please note that this is not a compiled binary. This is a CODE SAMPLE. There is no SLA (Service Level Agreement) or quality assessment or guarantees.</p>
@@ -165,48 +162,24 @@
 <p class="first admonition-title">Warning</p>
 <p class="last">Please do not reach out to Bloomberg for support or help.</p>
 </div>
-<p>The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions.</p>
-<p>There are other additional code samples that can be used along with EasyMSX on this repository. They are EasyMKT and RuleMSX samples.</p>
-<p>The EasyMKT and EasyMKTSample are essentially an EasyMSX for market data where the project demonstrates one possible way to build caching data on Bloomberg real-time market data.</p>
-<p>The RuleMSX is a business rule management project using Bloomberg EMSX API for trading, Bloomberg Market Data for market data and rete algorithm for efficient business rule management.</p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Table of Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="easyMSX.html">EasyMSX</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="easyMSX.html#easymsx-c-sharp">EasyMSX C Sharp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="easyMSX.html#easymsx-python">EasyMSX Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#easymsx">EasyMSX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#easymkt">EasyMKT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#rulemsx">RuleMSX</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="easyMKT.html">EasyMKT</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="easyMKT.html#easymkt-c-sharp">EasyMKT C Sharp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="easyMKT.html#easymkt-python">EasyMKT Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resource</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="resources.html#emsx-route-status">EMSX Route Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources.html#rulemsx">RuleMSX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources.html#earlier-version">Earlier Version</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ruleMSX.html">RuleMSX</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#rulesets">RuleSets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#rules">Rules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#ruleconditions">RuleConditions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#ruleevaluator">RuleEvaluator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#ruleactions">RuleActions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#actionexecutors">ActionExecutors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#datasets">DataSets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#datapoints">DataPoints</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#datapointsource">DataPointSource</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#the-executionagent-process">The ExecutionAgent process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#emsx-route-status">EMSX Route Status</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#rete-algorithm">RETE Algorithm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#earlier-version">Earlier Version</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#rulemsx-c-sharp">RuleMSX C Sharp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ruleMSX.html#rulemsx-python">RuleMSX Python</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="resource.html">Resource</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="resource.html#full-easymsx-code-samples">Full EasyMSX Code Samples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="resource.html#full-emsx-api-documentation">Full EMSX API Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="resource.html#full-emsx-api-code-samples">Full EMSX API Code Samples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="resource.html#full-bloomberg-api-developer-guide">Full Bloomberg API Developer Guide</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 </div>
 </div>
@@ -219,7 +192,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="easyMSX.html" class="btn btn-neutral float-right" title="EasyMSX" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
