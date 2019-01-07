@@ -119,20 +119,6 @@ The RuleMSX views each rule exists as a stand-alone rule that is either true or 
 A pattern contains one or more rules. All the rules in a pattern must evaluate to true for the action attached to the pattern to be executed. In this case, the action itself is responsible for introducing the new rules to be checked and/or new patterns or patterns to be removed from the set. 
 
 
-Earlier Version
-===============
-
-The initial approach to RuleMSX handled the rete in the following structure where each RuleSet consists of a single rule. Each rule consisted of child rules and rule evaluator.
-
-
-.. image:: /image/rete_orig.png
-
-
-As part of the reiteration of RuleMSX, we have made the changes to reflect the rete algorithm in the following structure: 
-
-
-.. image:: /image/rete_new.png
-
 RuleSets
 --------
 
@@ -253,29 +239,42 @@ The reason for doing this is that when a ``DataPointSource``’s value changes, 
 
 Following the ingestion process, the current ``OpenSetQueue`` becomes the ``OpenSet``, and the ``OpenSetQueue`` is then reset to empty. The ``OpenSet`` is now iterated, and each ``WorkingRule`` in the queue is processed. Each ``Evaluator`` in the ``WorkingRule`` is fired, passing it the ``WorkingRule``’s ``DataSet``. If all ``Evaluators`` in the ``WorkingRule`` return true, then the action process begins. Each action associated with the ``WorkingRule`` is executed.
 
+Earlier Version
+===============
 
+The initial approach to RuleMSX handled the rete in the following structure where each RuleSet consists of a single rule. Each rule consisted of child rules and rule evaluator.
+
+
+.. image:: /image/rete_orig.png
+
+
+As part of the reiteration of RuleMSX, we have made the changes to reflect the rete algorithm in the following structure: 
+
+
+.. image:: /image/rete_new.png
 
 
 Full EasyMSX Code Samples
--------------------------
+=========================
+
 
 The link to the main `EasyMSX Code Sample`_.
 
 
 Full EMSX API Documentation 
----------------------------
+===========================
 
 The link to the main `EMSX API Documentation`_.
 
 
 Full EMSX API Code Samples
---------------------------
+==========================
 
 The github link to the `EMSX API Code Sample`_. 
 
 
 Full Bloomberg API Developer Guide
-----------------------------------
+==================================
 
 The link to the `Open API Core Developer Guide`_.
 
@@ -297,7 +296,7 @@ The link to the `python RuleMSX`_.
 
 
 
-reference
+Reference
 ---------
 
 +---------------------------------------------------------------------------------------------------+
