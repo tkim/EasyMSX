@@ -39,6 +39,7 @@ Installing
 
 * The GitHub link to the EasyMSX sample in `EasyMSX`_.
 
+.. _referenced: https://easymsx.readthedocs.io/en/latest/resources.html#net-reference-for-rulemsx-project
 .. _EasyMSX: https://github.com/tkim/EasyMSXRepository
 
 
@@ -70,6 +71,7 @@ Installing
 
 * The GitHub link to the EasyMKT sample in `EasyMSX`_.
 
+.. _referenced: https://easymsx.readthedocs.io/en/latest/resources.html#net-reference-for-rulemsx-project
 .. _EasyMSX: https://github.com/tkim/EasyMSXRepository
 
 
@@ -137,7 +139,7 @@ Getting Started
 ---------------
 The following is the C# implementation of the RuleMSX sample. RuleMSX provides the core functionality of a rule engine. Once the library has been `referenced`_ in your project, create an instance of RuleMSX:-
 
-.. _referenced: https://easymsx.readthedocs.io/en/latest/resource.html#referenced
+.. _referenced: https://easymsx.readthedocs.io/en/latest/resources.html#net-reference-for-rulemsx-project
 
 .. code-block:: c#
 
