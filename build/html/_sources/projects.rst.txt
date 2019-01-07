@@ -1,21 +1,25 @@
 ########
 Projects
 ########
-
 There are currently three active projects written in C Sharp and Python. Other programming languages and projects will follow shortly.
+
 
 Prerequisites
 =============
 * All C# projects requires .NET 4.0 but has no other external dependencies. 
 * The python projects runs in Python 3. 
 
+
 EasyMSX
 =======
-The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions. 
+The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an `observer pattern`_ that can throw exceptions. 
+
+.. _observer pattern: https://en.wikipedia.org/wiki/Observer_pattern
+
 
 Installing
 ----------
-* For C#, Download the source code and build the library from the source.
+* For C#, Download the source code and build the library from the source. Once the Bloomberg API SDK has been `referenced`_ in your project, create an instance of EasyMSX:-
 
 * For python, create the new directory and extract easymsx-1.0.x into the new directory. Change the directory to easymsx-1.0.x and in the directory run the following command:-
 
@@ -42,9 +46,10 @@ EasyMKT
 =======
 The EasyMKT and EasyMKTSample are essentially an EasyMSX for market data where the project demonstrates one possible way to build caching data on Bloomberg real-time market data.
 
+
 Installing
 ----------
-* For C#, Download the source code and build the library from the source.
+* For C#, Download the source code and build the library from the source. Once the Bloomberg API SDK has been `referenced`_ in your project, create an instance of EasyMKT:-
 
 * For python, create the new directory and extract easymkt-1.0.x into the new directory. Change the directory to easymkt-1.0.x and in the directory run the following command:-
 
@@ -75,7 +80,7 @@ Rather than making use of domain specific language (DSL) to define the rules, it
 
 Installing
 ----------
-* For C#, Download the source code and build the library from the source.
+* For C#, Download the source code and build the library from the source. 
 
 * For python, create the new directory and extract easymsx-1.0.0 and rulemsx-1.0.0 into the new directory.
 
@@ -139,13 +144,23 @@ The following is the C# implementation of the RuleMSX sample. RuleMSX provides t
     RuleMSX rmsx = new RuleMSX();
 
 
-RuleMSX is divided into Rules, DataPoints and Actions. Rules are organized into RuleSets:-
+RuleMSX is divided into 'Rules'_, 'DataPoints'_ and 'Actions'_. Rules are organized into 'RuleSets'_:-
+
+.. _Rules: https://easymsx.readthedocs.io/en/latest/resources.html#rules
+.. _Actions: https://easymsx.readthedocs.io/en/latest/resources.html#rules
+.. _RuleSets: https://easymsx.readthedocs.io/en/latest/resources.html#rulesets
+
 
 .. code-block:: c#
 
     RuleSet myRuleSet = this.rmsx.CreateRuleSet("MyRuleSet");
 
-A RuleSet contains one or more Rules, and each Rule is made up of one or more RuleConditions. Each RuleCondition has a RuleEvaluator which is the code written by the developer. Each rule also has one or more RuleAction associated with it. When all the RuleConditions are met, the RuleAction is excuted.
+A RuleSet contains one or more Rules, and each Rule is made up of one or more `RuleConditions`_. Each RuleCondition has a `RuleEvaluator`_ which is the code written by the developer. Each rule also has one or more `RuleAction`_ associated with it. When all the RuleConditions are met, the RuleAction is excuted.
+
+.. _RuleConditions: https://easymsx.readthedocs.io/en/latest/resources.html#ruleconditions
+.. _RuleEvaluator: https://easymsx.readthedocs.io/en/latest/resources.html#ruleevaluator
+.. _RuleAction: https://easymsx.readthedocs.io/en/latest/resources.html#ruleactions
+
 
 To create a Rule:-
 
@@ -161,7 +176,9 @@ To create a RuleCondition:-
 
     RuleCondition myRuleCondition = new RuleCondition("MyConditoin", new MyCondtionCode());
 
-The 'MyConditionCode' class extends the RuleEvaluator abstract class, guarenteeing the presence of an Evalute() method. This method must return a boolean value.
+The 'MyConditionCode' class extends the RuleEvaluator abstract class, guarenteeing the presence of an Evalute() method. This method must return a `boolean value`_.
+
+.. _boolean value: https://en.wikipedia.org/wiki/Boolean_data_type
 
 For example:-
 
@@ -244,9 +261,13 @@ Alternatively:-
 
     myNewRule.AddAction(rmsx.CreateAction("MyAction", new MyActionCode()));
 
-The data to be processed is a RuleSet is defined as DataPoints, which are organized into DataSets.
+The data to be processed is a RuleSet is defined as 'DataPoints'_, which are organized into 'DataSets'_.
 
 A DataPoint is a single named item of data that has an assocated DataPointSource. The DataPointSource is an abstract class that the developer extends, which guarentees teh presense of a GetValue() method. Think of the DataSet as an object with properties. Think of the DataSet as a collection of DataPoints, each of which is a key-value pair. 
+
+.. _DataPoints: https://easymsx.readthedocs.io/en/latest/resources.html#datapoints
+.. _DataSets: https://easymsx.readthedocs.io/en/latest/resources.html#datasets
+
 
 You submit a DataSet for execution by a RuleSet's execution agent, as follows:-
 
@@ -261,7 +282,9 @@ To create a DataSet:-
     DataSet myDataSet = rmsx.CreateDataSet("<some unique name>");
 
 
-To create a DataPoint, you first need to create a DataPointSource. This is done by creating a class that extends DataPointSource:-
+To create a DataPoint, you first need to create a `DataPointSource`_. This is done by creating a class that extends DataPointSource:-
+
+.. _DataPointSource: https://easymsx.readthedocs.io/en/latest/resources.html#datapointsource
 
 .. code-block:: c#
 
@@ -303,11 +326,13 @@ Alternatively:-
 
 Operation
 ---------
-The execution agent that underlies a RuleSet operates in its own thread. When a RuleSets Execute() method is first invoked, the execution agent is created. Thereafter, any further calls to Execute() will result in the DataSet simply being passed to the already running agent.
+The `execution agent`_ that underlies a RuleSet operates in its own thread. When a RuleSets Execute() method is first invoked, the execution agent is created. Thereafter, any further calls to Execute() will result in the DataSet simply being passed to the already running agent.
 
 When a DataSet is ingested by the execution agent, all the Rules will be tested. Once a rule is tested, it will not be tested again, unless it is re-introduced. This happesn when a RuleCondition whin the rule has a delcared dependency on a DataPoint whos DataPointSource has been marked as stale. This is done on the client side, by calling SetStale() on a DataPointSource object. Any Rule that has a dependency on that DataPoint will be re-introduced into the queue of Rules to be tested.
 
 This means that RuleCondition can be created that depends on  the value of a variable or field that will change over time. When the rule is fist tested, perhpas the value is in a state that means that the Evaluate() method will return False. However, it may change later. The rule will not be tested again under normal circumstances. But if the variable or field changes values, simply call the SetStale() method on the DataPointSource object, and any and all Rules which have a RuleCondition that depends on its value will be re-tested. This means that the RuleCondition may now return True, and the associated ActionExecutor of Rule will be fired. 
+
+.. _execution agent: https://easymsx.readthedocs.io/en/latest/resources.html#the-executionagent-process
 
 Tests 
 -----

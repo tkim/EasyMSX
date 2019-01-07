@@ -166,11 +166,11 @@
 </div>
 <div class="section" id="easymsx">
 <h2>EasyMSX<a class="headerlink" href="#easymsx" title="Permalink to this headline">¶</a></h2>
-<p>The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an observer pattern that can throw exceptions.</p>
+<p>The EasyMSX allows getting orders, routes, and static data from EMSX API service. The EasyMSX allows adding notification handler on the real-time events. There is an <a class="reference external" href="https://en.wikipedia.org/wiki/Observer_pattern">observer pattern</a> that can throw exceptions.</p>
 <div class="section" id="installing">
 <h3>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>For C#, Download the source code and build the library from the source.</li>
+<li>For C#, Download the source code and build the library from the source. Once the Bloomberg API SDK has been <a class="reference external" href="https://easymsx.readthedocs.io/en/latest/resource.html#referenced">referenced</a> in your project, create an instance of EasyMSX:-</li>
 <li>For python, create the new directory and extract easymsx-1.0.x into the new directory. Change the directory to easymsx-1.0.x and in the directory run the following command:-</li>
 </ul>
 <div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\&gt;cd easymsx-1.0.x
@@ -197,7 +197,7 @@ C:\Users\Me\easymsx-1.0.x&gt;py -3 easymsxdemo.py
 <div class="section" id="id2">
 <h3>Installing<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>For C#, Download the source code and build the library from the source.</li>
+<li>For C#, Download the source code and build the library from the source. Once the Bloomberg API SDK has been <a class="reference external" href="https://easymsx.readthedocs.io/en/latest/resource.html#referenced">referenced</a> in your project, create an instance of EasyMKT:-</li>
 <li>For python, create the new directory and extract easymkt-1.0.x into the new directory. Change the directory to easymkt-1.0.x and in the directory run the following command:-</li>
 </ul>
 <div class="highlight-none"><div class="highlight"><pre><span></span>C:\Users\Me\&gt;cd easymkt-1.0.x
@@ -280,11 +280,11 @@ Press any to terminate
 <div class="highlight-c#"><div class="highlight"><pre><span></span><span class="n">RuleMSX</span> <span class="n">rmsx</span> <span class="p">=</span> <span class="k">new</span> <span class="n">RuleMSX</span><span class="p">();</span>
 </pre></div>
 </div>
-<p>RuleMSX is divided into Rules, DataPoints and Actions. Rules are organized into RuleSets:-</p>
+<p>RuleMSX is divided into &#8216;Rules&#8217;_, &#8216;DataPoints&#8217;_ and &#8216;Actions&#8217;_. Rules are organized into &#8216;RuleSets&#8217;_:-</p>
 <div class="highlight-c#"><div class="highlight"><pre><span></span><span class="n">RuleSet</span> <span class="n">myRuleSet</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">rmsx</span><span class="p">.</span><span class="n">CreateRuleSet</span><span class="p">(</span><span class="s">&quot;MyRuleSet&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>A RuleSet contains one or more Rules, and each Rule is made up of one or more RuleConditions. Each RuleCondition has a RuleEvaluator which is the code written by the developer. Each rule also has one or more RuleAction associated with it. When all the RuleConditions are met, the RuleAction is excuted.</p>
+<p>A RuleSet contains one or more Rules, and each Rule is made up of one or more <a class="reference external" href="https://easymsx.readthedocs.io/en/latest/resources.html#ruleconditions">RuleConditions</a>. Each RuleCondition has a <a class="reference external" href="https://easymsx.readthedocs.io/en/latest/resources.html#ruleevaluator">RuleEvaluator</a> which is the code written by the developer. Each rule also has one or more <a class="reference external" href="https://easymsx.readthedocs.io/en/latest/resources.html#ruleactions">RuleAction</a> associated with it. When all the RuleConditions are met, the RuleAction is excuted.</p>
 <p>To create a Rule:-</p>
 <div class="highlight-c#"><div class="highlight"><pre><span></span><span class="n">Rule</span> <span class="n">myNewRule</span> <span class="p">=</span> <span class="n">myRuleSet</span><span class="p">.</span><span class="n">AddRule</span><span class="p">(</span><span class="s">&quot;NewRule&quot;</span><span class="p">);</span>
 </pre></div>
@@ -293,7 +293,7 @@ Press any to terminate
 <div class="highlight-c#"><div class="highlight"><pre><span></span><span class="n">RuleCondition</span> <span class="n">myRuleCondition</span> <span class="p">=</span> <span class="k">new</span> <span class="n">RuleCondition</span><span class="p">(</span><span class="s">&quot;MyConditoin&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">MyCondtionCode</span><span class="p">());</span>
 </pre></div>
 </div>
-<p>The &#8216;MyConditionCode&#8217; class extends the RuleEvaluator abstract class, guarenteeing the presence of an Evalute() method. This method must return a boolean value.</p>
+<p>The &#8216;MyConditionCode&#8217; class extends the RuleEvaluator abstract class, guarenteeing the presence of an Evalute() method. This method must return a <a class="reference external" href="https://en.wikipedia.org/wiki/Boolean_data_type">boolean value</a>.</p>
 <p>For example:-</p>
 <div class="highlight-c#"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyConditionCode</span> <span class="p">:</span> <span class="n">RuleEvaluator</span>
 <span class="p">{</span>
@@ -354,7 +354,7 @@ Press any to terminate
 <div class="highlight-c#"><div class="highlight"><pre><span></span><span class="n">myNewRule</span><span class="p">.</span><span class="n">AddAction</span><span class="p">(</span><span class="n">rmsx</span><span class="p">.</span><span class="n">CreateAction</span><span class="p">(</span><span class="s">&quot;MyAction&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">MyActionCode</span><span class="p">()));</span>
 </pre></div>
 </div>
-<p>The data to be processed is a RuleSet is defined as DataPoints, which are organized into DataSets.</p>
+<p>The data to be processed is a RuleSet is defined as &#8216;DataPoints&#8217;_, which are organized into &#8216;DataSets&#8217;_.</p>
 <p>A DataPoint is a single named item of data that has an assocated DataPointSource. The DataPointSource is an abstract class that the developer extends, which guarentees teh presense of a GetValue() method. Think of the DataSet as an object with properties. Think of the DataSet as a collection of DataPoints, each of which is a key-value pair.</p>
 <p>You submit a DataSet for execution by a RuleSet&#8217;s execution agent, as follows:-</p>
 <div class="highlight-c#"><div class="highlight"><pre><span></span><span class="n">myRuleSet</span><span class="p">.</span><span class="n">execute</span><span class="p">(</span><span class="n">myDataSet</span><span class="p">);</span>
@@ -364,7 +364,7 @@ Press any to terminate
 <div class="highlight-c#"><div class="highlight"><pre><span></span><span class="n">DataSet</span> <span class="n">myDataSet</span> <span class="p">=</span> <span class="n">rmsx</span><span class="p">.</span><span class="n">CreateDataSet</span><span class="p">(</span><span class="s">&quot;&lt;some unique name&gt;&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>To create a DataPoint, you first need to create a DataPointSource. This is done by creating a class that extends DataPointSource:-</p>
+<p>To create a DataPoint, you first need to create a <a class="reference external" href="https://easymsx.readthedocs.io/en/latest/resources.html#datapointsource">DataPointSource</a>. This is done by creating a class that extends DataPointSource:-</p>
 <div class="highlight-c#"><div class="highlight"><pre><span></span><span class="k">private</span> <span class="k">class</span> <span class="nc">ConstantDataPointSource</span> <span class="p">:</span> <span class="n">DataPointSource</span>
 <span class="p">{</span>
     <span class="kt">string</span> <span class="n">retValue</span><span class="p">;</span>
@@ -396,7 +396,7 @@ Press any to terminate
 </div>
 <div class="section" id="operation">
 <h3>Operation<a class="headerlink" href="#operation" title="Permalink to this headline">¶</a></h3>
-<p>The execution agent that underlies a RuleSet operates in its own thread. When a RuleSets Execute() method is first invoked, the execution agent is created. Thereafter, any further calls to Execute() will result in the DataSet simply being passed to the already running agent.</p>
+<p>The <a class="reference external" href="https://easymsx.readthedocs.io/en/latest/resources.html#the-executionagent-process">execution agent</a> that underlies a RuleSet operates in its own thread. When a RuleSets Execute() method is first invoked, the execution agent is created. Thereafter, any further calls to Execute() will result in the DataSet simply being passed to the already running agent.</p>
 <p>When a DataSet is ingested by the execution agent, all the Rules will be tested. Once a rule is tested, it will not be tested again, unless it is re-introduced. This happesn when a RuleCondition whin the rule has a delcared dependency on a DataPoint whos DataPointSource has been marked as stale. This is done on the client side, by calling SetStale() on a DataPointSource object. Any Rule that has a dependency on that DataPoint will be re-introduced into the queue of Rules to be tested.</p>
 <p>This means that RuleCondition can be created that depends on  the value of a variable or field that will change over time. When the rule is fist tested, perhpas the value is in a state that means that the Evaluate() method will return False. However, it may change later. The rule will not be tested again under normal circumstances. But if the variable or field changes values, simply call the SetStale() method on the DataPointSource object, and any and all Rules which have a RuleCondition that depends on its value will be re-tested. This means that the RuleCondition may now return True, and the associated ActionExecutor of Rule will be fired.</p>
 </div>
