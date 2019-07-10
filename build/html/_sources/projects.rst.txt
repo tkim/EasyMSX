@@ -348,3 +348,8 @@ License
 -------
 This project is under the MIT License - see the License file for details.
 
+
+EMSX API in Julia language
+==========================
+
+EMSX API in Julia Programming Language coming soon!
